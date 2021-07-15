@@ -1,0 +1,293 @@
+@import './dimens'; 
+@import './theme'; 
+@import './variables'; 
+@import '../utilities/media-queries'; 
+@import '../utilities/mixins'; 
+
+html, body {
+    margin: 0;
+    padding: 0;
+    @include borderBox;
+    overflow-x: hidden;
+}
+
+body {
+    font-family: $main_typo;
+    overflow-x: hidden;
+    font-weight: 500;
+}
+
+*, *:before, *:after {
+    box-sizing: inherit;
+    list-style: none;
+    text-decoration: none;
+    transition: all .1s ease-in-out;
+}
+  
+i, a, button {
+    cursor: pointer;
+}
+
+section {
+    height: 100vh;
+    min-height: 100vh;
+    width: 100%;
+}
+
+a {
+    text-decoration: none;
+}
+
+ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+p {
+    margin-bottom: none;
+}
+
+img {
+    width: 100%;
+}
+    
+.imgCv {
+    width: 70%;
+}
+
+h1 {
+    font-size: $header1;
+    font-weight: 700;
+}
+
+h1,h2,h3,p,a,i{
+    color: $primaryTextColor;
+}
+
+#tipsScreen h1,
+#tipsScreen h2,
+#tipsScreen h3,
+#tipsScreen p,
+#tipsScreen a,
+#tipsScreen i,
+#faqsScreen h1,
+#faqsScreen h2,
+#faqsScreen h3,
+#faqsScreen p,
+#faqsScreen a,
+#faqsScreen i,
+#tipsScreen .copyright__separator,
+#faqsScreen .copyright__separator {
+    color: $whiteColor;
+}
+    
+h2 {
+    font-size: $header2;
+    font-weight: 700;
+}
+
+h3 {
+    font-size: $header3;
+    margin-top: 15px;
+    margin-bottom: 30px;
+}
+
+a {
+    cursor: pointer;
+    text-decoration: none;
+}
+
+p, 
+ul,
+.row,
+.col-sm,
+.col-md-6,
+.col-md-3,
+.col-md-9 {
+    margin: 0;
+    padding: 0;
+}
+
+ul {
+    padding-left: 0;
+}
+    
+// elevations
+@for $i from 1 through 5 {  
+    .elevation#{$i} {
+        box-shadow: 0 8px 17px 2px rgba(71, 69, 69, 0.023 * $i), 
+                    0 3px 14px 2px rgba(71, 69, 69, 0.023 * $i), 
+                    0 5px 5px -3px rgba(107, 35, 35, 0.023 * $i);
+    }
+}
+
+// no elevation
+.noElevation {
+    @include shadow-none(none);
+}
+  
+// aligments
+.alignX {
+    @include aligment(flex-start, row, flex-start);
+}
+
+.alignY {
+    @include aligment(flex-start, column, flex-start);
+}
+
+.goDown {
+    display: block;
+}
+
+.pushAside {
+    display: flex; 
+    justify-content: space-between;
+    margin-left: auto;
+}
+
+.disabled {
+    @include shadow-none(none);
+    pointer-events: none;
+    color: $secondaryTextColor;
+    cursor: default;
+    border: none;
+    background-color: $disableColor;
+}
+
+.autoHeight {
+    min-height: auto;
+    height: auto;
+}
+
+.centerMiddle,
+.alignMiddleY {
+    height: 100vh;
+}
+
+.centerMiddle {
+    @include aligment(center, column, center);
+}
+
+.alignMiddleY {
+    @include aligment(flex-start, column, center);
+}
+
+.alignMiddleX {
+    @include aligment(center, column, center);
+}
+
+.initMayus {
+    text-transform: initial;
+}
+  
+// custom scrollbars
+
+::-webkit-scrollbar {
+    width: 10px;
+}
+
+::-webkit-scrollbar-track {
+    border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb {
+    border-radius: 10px;
+    background: $disableColor; 
+}
+
+::-webkit-scrollbar-thumb:window-inactive {
+    background: $disableColor; 
+}
+
+.customCard {
+    background-color: $whiteColor;
+}
+
+.tag {
+    padding: 6px 15px;
+    border-radius: 20px;
+    background-color: $tagColor;
+    color: $whiteColor;
+    display: inline;
+    font-size: 14px;
+    font-weight: 300;
+    margin: 5px;
+}
+    
+.arrow-to-top {
+    height: 45px;
+    width: 45px;
+    position: fixed;
+    z-index: 99;
+    bottom: 0;
+    right: 0;
+    margin: 20px 30px;
+    padding: 10px;
+    color: $primaryTextColor;
+    border-radius: 50%;
+    display: none;
+}
+
+.arrow-to-top:hover {
+    background-color: $translucent;
+}
+
+/* backgrounds */
+    
+#index__tipsSection h2,
+#index__tipsSection h3,
+#index__faqsSection h2,
+#index__faqsSection h3 {
+    color: $whiteColor;
+}
+
+#index__homeSection {
+    background-color: $primaryColor;
+}
+
+#index__procedureSection,
+#procedureScreen,
+#procedureScreen footer {
+    background-color: $como-lo-hago-light;
+}
+
+#index__tipsSection,
+#tipsScreen,
+#tipsScreen footer {
+    background-color: $tips-light;
+}
+
+#index__faqsSection,
+#faqsScreen,
+#faqsScreen footer,
+#homeScreen footer {
+    background-color: $preguntas-dark;
+}
+
+.scrollAppear {
+    display: none;
+}
+
+@media #{$mobileSm} {
+    ::-webkit-scrollbar-thumb {
+        display: none; 
+    }
+}
+  
+@media #{$mobile} {
+    section {
+        height: auto;
+        min-height: auto;
+    }
+}
+
+    
+    
+    
+    
+    
+    
+    
+    
+    

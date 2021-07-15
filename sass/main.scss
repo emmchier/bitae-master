@@ -1,0 +1,28 @@
+// components
+@import './components/buttons';
+@import './components/footer';
+@import './components/form';
+@import './components/header';
+@import './components/navbar';
+@import './components/navigation';
+@import './components/tag';
+
+
+// pages
+@import './pages/404';
+@import './pages/como-hago';
+@import './pages/elige-tu-cv';
+@import './pages/faqs';
+@import './pages/index';
+@import './pages/legal';
+@import './pages/tips';
+
+// utilities
+@import './utilities/media-queries';
+@import './utilities/mixins';
+
+// base styles
+@import './base/variables';
+@import './base/theme';
+@import './base/dimens';
+@import './base/base';

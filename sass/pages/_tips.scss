@@ -1,0 +1,24 @@
+#tipsSection {
+    height: auto;
+
+    .sectionDesc {
+        padding: 6rem 0;
+        color: #FFFFFF;
+        font-size: 2rem;
+    }
+}
+
+.tips__tipCard {
+    width: 95% !important; 
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    margin: 20px;
+    padding: 25px;
+    border-radius: 20px;
+}
+
+.tips__tipCard figure,
+.tips__tipCard img {
+    width: 200px;
+}

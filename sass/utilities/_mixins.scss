@@ -1,0 +1,41 @@
+@mixin gradientBackground($from, $to) {
+    background-image: linear-gradient(
+    to right, $from, $to);
+}
+
+@mixin borderBox {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+@mixin shadow($box-shadow1, $box-shadow2, $box-shadow3) {
+    -webkit-box-shadow: $box-shadow1, $box-shadow2, $box-shadow3;
+            box-shadow: $box-shadow1, $box-shadow2, $box-shadow3;
+}
+  
+@mixin shadow-none($box-shadow-none) {
+  -webkit-box-shadow: $box-shadow-none;
+          box-shadow: $box-shadow-none;
+}
+
+@mixin getShadow {
+  @include shadow(
+    0 8px 17px 2px rgba(71, 69, 69, 0.023) !important, 
+    0 3px 14px 2px rgba(71, 69, 69, 0.023) !important, 
+    0 5px 5px -3px rgba(71, 69, 69, 0.023) !important);
+}
+
+@mixin aligment($align-items, $direction, $justify) {
+  -webkit-align-items: $align-items;
+    -webkit-box-align: $align-items;
+        -ms-flex-align: $align-items;
+          align-items: $align-items;
+          flex-direction: $direction;
+          justify-content: $justify;
+          display: -webkit-box;
+          display: -webkit-flex;
+          display: -ms-flexbox;
+          display: flex;
+}
+

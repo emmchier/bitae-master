@@ -1,0 +1,51 @@
+// headers
+$header1: 3.5rem; // h1
+$header2: 2.5rem;   // h2
+$header3: 2rem; // h3
+$header4: 1rem;   // h4
+$header5: 0.5rem; // h5
+$header6: 0.1rem; // h6
+// headers weight
+$header_weight: 600;
+
+// borders
+$base_border_radius: 15px;
+
+// text sizes
+$base_primary_text: 1rem;
+$base_secondary_text: .8rem;
+// text weight
+$base_text_weight: 400;
+
+// ----------------- components ----------------- //
+
+// navbar
+$navbar_brand_text_size: 2rem;
+$navbar_height: 80px;
+
+// icons
+$base_icon_size: 1.2rem;
+
+// buttons
+
+// buttons - types
+$btn_types: 'contained', 'outlined', 'text', 'fab';
+$btn_type_sizes: 'small', 'medium', 'large';
+
+// buttons - sizes
+$btn_text_size_small: .8rem;
+$btn_text_size_medium: 1.1rem;
+$btn_text_size_large: 1.3rem;
+
+// buttons - general
+$btn_padding: 10px 30px;
+$btn_padding_y: 10px;
+$btn_padding_x: 30px;
+$btn_border_radius: 5px;
+$btn_icon_size: 2rem;
+
+// buttons - fab
+$btn_padding_fab: 30px;
+$btn_width_fab: 58px;
+$btn_height_fab: 58px;
+$btn_border_radius_fab: 50%;

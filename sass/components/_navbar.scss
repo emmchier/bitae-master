@@ -1,0 +1,29 @@
+.navbar {
+    height: 20vh;
+    min-height: 20vh;
+}
+
+@media #{$note} {
+    .navbar-nav {
+        display: flex !important;
+    }
+}
+
+@media #{$tablet} {
+    .navbar-nav {
+        display: none;
+    }
+}
+
+@media #{$mobileSm} {
+    .navbar-nav {
+        display: none;
+    }
+}
+
+@media #{$mobile} {
+    .navbar-nav {
+        display: none;
+    }
+}
+

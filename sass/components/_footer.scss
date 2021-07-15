@@ -1,0 +1,68 @@
+@import '../base/dimens';
+@import '../base/theme';
+@import '../base/variables';
+
+footer {
+    padding: 3rem 0;
+    position: relative;
+    z-index: 9 !important;
+
+    p, a, h1 {
+        color: $primaryTextColor;
+    }
+
+    .footer__contact-container {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-end;
+    }
+    
+    .footer__brand-container,
+    .footer__nav {
+        transform: translateY(8px);
+    }
+    
+    .footer__btn-contact.customBtn {
+        padding: 10px 0;
+        margin: 0;
+    }
+    
+    .footer__social-networks {
+        transform: translateY(-3px);
+        margin-left: 10px;
+    }
+    
+    .footer__nav-list {
+        display: flex;
+    }
+    
+    .footer__social-networks,
+    .footer__nav-list {
+        li {
+            margin-right: 20px;
+        }
+    }
+    
+    .footer__nav-list {
+        li {
+            a:hover {
+                color: $secondaryLightColor;
+            }
+        }
+    } 
+    
+    .copyright__separator {
+        margin: 0 10px;
+    }
+    
+    .footer__btn-contact p:hover {
+        color: $primaryColor;
+    }
+}
+
+@media #{$mobile} {
+    .footer__nav-list {
+        display: flex;
+        flex-direction: column;
+    }
+}

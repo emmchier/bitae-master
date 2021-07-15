@@ -1,0 +1,24 @@
+@import '../base/dimens';
+@import '../base/theme';
+@import '../base/variables';
+    
+header {
+    width: 100%;
+    position: fixed;
+    z-index: 999 !important;
+
+    .sectionHeader,
+    .sectionHeader .alignMiddleY {
+        min-height: 60vh;
+        height: 60vh;
+    }
+
+    .sectionHeader {
+        
+        h3 {
+            margin: 10px 0;
+            font-size: 3rem;
+            font-weight: 800;
+        }
+    }
+}
