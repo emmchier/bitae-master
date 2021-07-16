@@ -1,24 +1,54 @@
 #tipsSection {
     height: auto;
-
+    
     .sectionDesc {
         padding: 6rem 0;
-        color: #FFFFFF;
+        color: $whiteColor;
         font-size: 2rem;
     }
 }
 
+.articleTitle,
+.articleDesc {
+    color: $whiteColor;
+}
+
+.articleTitle {
+    font-size: $header3;
+}
+
+.articleDesc {
+    font-size: $base_primary_text;
+    font-weight: $base_text_weight;
+}
+
 .tips__tipCard {
-    width: 95% !important; 
+    width: 95%; 
+    min-height: 50vh;
     display: flex;
     align-items: center;
     justify-content: flex-start;
     margin: 20px;
-    padding: 25px;
+    padding: 30px;
     border-radius: 20px;
+    background-color: transparent;
+    border: none;
+
+    .card-img-top {
+        width: 100%;
+        margin-bottom: 30px;
+    }
+
+    .tips__cvImage {
+        padding-right: 30px;
+    }
 }
 
 .tips__tipCard figure,
 .tips__tipCard img {
     width: 200px;
+}
+
+#tips__mediumSection {
+    height: auto;
 }

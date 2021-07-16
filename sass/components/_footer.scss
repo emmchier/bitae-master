@@ -4,7 +4,6 @@
 
 footer {
     padding: 3rem 0;
-    position: relative;
     z-index: 9 !important;
 
     p, a, h1 {
@@ -26,10 +25,18 @@ footer {
         padding: 10px 0;
         margin: 0;
     }
+
+    .footer__contact-container {
+        display: flex;
+    }
     
     .footer__social-networks {
-        transform: translateY(-3px);
-        margin-left: 10px;
+        transform: translateY(16px);
+        margin-left: 20px;
+    }
+
+    .socialMediaLink a i {
+        font-size: $base_icon_size_footer;
     }
     
     .footer__nav-list {

@@ -1,0 +1,29 @@
+#faqsSection {
+    height: auto;
+
+    .accordion-item {
+        background-color: transparent;
+        border: none;
+    }
+    
+
+    .accordion-button,
+    .accordion-button:not(.collapsed) {
+        background-color: transparent;
+        box-shadow: none;
+        font-size: $header3;
+    }
+
+    .accordion-button,
+    .accordion-body {
+        color: $whiteColor;
+    }
+
+    .accordion-body {
+        font-size: $base_primary_text;
+    }
+
+    .accordion-button::after {
+        background-image: url(./../../imgs/arrow.svg) $whiteColor;
+    }
+}

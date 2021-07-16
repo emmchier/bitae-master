@@ -214,7 +214,6 @@
 }
 footer {
   padding: 3rem 0;
-  position: relative;
   z-index: 9 !important;
 }
 footer p, footer a, footer h1 {
@@ -241,10 +240,18 @@ footer .footer__btn-contact.customBtn {
   padding: 10px 0;
   margin: 0;
 }
+footer .footer__contact-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
 footer .footer__social-networks {
-  -webkit-transform: translateY(-3px);
-          transform: translateY(-3px);
-  margin-left: 10px;
+  -webkit-transform: translateY(16px);
+          transform: translateY(16px);
+  margin-left: 20px;
+}
+footer .socialMediaLink a i {
+  font-size: 1.5rem;
 }
 footer .footer__nav-list {
   display: -webkit-box;
@@ -286,14 +293,10 @@ header {
   position: fixed;
   z-index: 999 !important;
 }
-header .sectionHeader,
-header .sectionHeader .alignMiddleY {
-  min-height: 60vh;
-  height: 60vh;
-}
-header .sectionHeader h3 {
+
+.headerContent h3 {
   margin: 10px 0;
-  font-size: 3rem;
+  font-size: 3.5rem;
   font-weight: 800;
 }
 
@@ -338,13 +341,10 @@ header .sectionHeader h3 {
           backdrop-filter: blur(15px);
 }
 
-#cvsScreen {
-  position: relative;
+#cvsSection {
+  height: auto;
 }
-#cvsScreen .cvsSection__container-cvs {
-  position: relative;
-}
-#cvsScreen .cvsSection__cvsContent .cvsSection__cvsInfo {
+#cvsSection .cvsSection__cvsContent .cvsSection__cvsInfo {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -359,7 +359,7 @@ header .sectionHeader h3 {
       -ms-flex-direction: column;
           flex-direction: column;
 }
-#cvsScreen .cvsSection__cvsContent .cvsSection__cvsInfo h2 {
+#cvsSection .cvsSection__cvsContent .cvsSection__cvsInfo h2 {
   font-weight: 500;
   text-align: center;
   margin-bottom: 30px;
@@ -396,6 +396,31 @@ header .sectionHeader h3 {
           justify-content: center;
 }
 
+#faqsSection {
+  height: auto;
+}
+#faqsSection .accordion-item {
+  background-color: transparent;
+  border: none;
+}
+#faqsSection .accordion-button,
+#faqsSection .accordion-button:not(.collapsed) {
+  background-color: transparent;
+  -webkit-box-shadow: none;
+          box-shadow: none;
+  font-size: 2rem;
+}
+#faqsSection .accordion-button,
+#faqsSection .accordion-body {
+  color: #ffffff;
+}
+#faqsSection .accordion-body {
+  font-size: 1.5rem;
+}
+#faqsSection .accordion-button::after {
+  background-image: url(./../../imgs/arrow.svg) #ffffff;
+}
+
 .legalScreen {
   padding-top: 25vh;
 }
@@ -405,12 +430,27 @@ header .sectionHeader h3 {
 }
 #tipsSection .sectionDesc {
   padding: 6rem 0;
-  color: #FFFFFF;
+  color: #ffffff;
   font-size: 2rem;
 }
 
+.articleTitle,
+.articleDesc {
+  color: #ffffff;
+}
+
+.articleTitle {
+  font-size: 2rem;
+}
+
+.articleDesc {
+  font-size: 1.5rem;
+  font-weight: 400;
+}
+
 .tips__tipCard {
-  width: 95% !important;
+  width: 95%;
+  min-height: 50vh;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -421,13 +461,26 @@ header .sectionHeader h3 {
       -ms-flex-pack: start;
           justify-content: flex-start;
   margin: 20px;
-  padding: 25px;
+  padding: 30px;
   border-radius: 20px;
+  background-color: transparent;
+  border: none;
+}
+.tips__tipCard .card-img-top {
+  width: 100%;
+  margin-bottom: 30px;
+}
+.tips__tipCard .tips__cvImage {
+  padding-right: 30px;
 }
 
 .tips__tipCard figure,
 .tips__tipCard img {
   width: 200px;
+}
+
+#tips__mediumSection {
+  height: auto;
 }
 
 html, body {
@@ -459,8 +512,6 @@ i, a, button {
 
 section {
   height: 100vh;
-  min-height: 100vh;
-  width: 100%;
 }
 
 a {

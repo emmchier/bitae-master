@@ -6,19 +6,13 @@ header {
     width: 100%;
     position: fixed;
     z-index: 999 !important;
+}
 
-    .sectionHeader,
-    .sectionHeader .alignMiddleY {
-        min-height: 60vh;
-        height: 60vh;
-    }
-
-    .sectionHeader {
+.headerContent {
         
-        h3 {
-            margin: 10px 0;
-            font-size: 3rem;
-            font-weight: 800;
-        }
+    h3 {
+        margin: 10px 0;
+        font-size: $header1;
+        font-weight: 800;
     }
 }
