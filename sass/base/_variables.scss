@@ -1,8 +1,8 @@
 // headers
 $header1: 3.5rem; // h1
-$header2: 2.5rem;   // h2
+$header2: 2.5rem; // h2
 $header3: 2rem; // h3
-$header4: 1rem;   // h4
+$header4: 1rem; // h4
 $header5: 0.5rem; // h5
 $header6: 0.1rem; // h6
 // headers weight
@@ -13,7 +13,7 @@ $base_border_radius: 15px;
 
 // text sizes
 $base_primary_text: 1.5rem;
-$base_secondary_text: .8rem;
+$base_secondary_text: 0.8rem;
 // text weight
 $base_text_weight: 400;
 
@@ -30,11 +30,11 @@ $base_icon_size_footer: 1.5rem;
 // buttons
 
 // buttons - types
-$btn_types: 'contained', 'outlined', 'text', 'fab';
-$btn_type_sizes: 'small', 'medium', 'large';
+$btn_types: "contained", "outlined", "text", "fab";
+$btn_type_sizes: "small", "medium", "large";
 
 // buttons - sizes
-$btn_text_size_small: .8rem;
+$btn_text_size_small: 0.8rem;
 $btn_text_size_medium: 1.1rem;
 $btn_text_size_large: 1.3rem;
 
@@ -50,3 +50,6 @@ $btn_padding_fab: 30px;
 $btn_width_fab: 58px;
 $btn_height_fab: 58px;
 $btn_border_radius_fab: 50%;
+
+// transitions
+$main_transition: 0.1s;

@@ -1,18 +1,17 @@
-@import '../base/dimens';
-@import '../base/theme';
-@import '../base/variables';
-    
+@import "../base/dimens";
+@import "../base/theme";
+@import "../base/variables";
+
 header {
-    width: 100%;
-    position: fixed;
-    z-index: 999 !important;
+  width: 100%;
+  position: fixed;
+  z-index: 9999 !important;
 }
 
 .headerContent {
-        
-    h3 {
-        margin: 10px 0;
-        font-size: $header1;
-        font-weight: 800;
-    }
+  h3 {
+    margin: 10px 0;
+    font-size: $header1;
+    font-weight: 800;
+  }
 }
