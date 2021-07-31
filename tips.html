@@ -74,12 +74,37 @@
             <i class="material-icons">arrow_upward</i>
           </li>
         </ul>
-        <button class="navbar-toggler">
-          <i class="material-icons">menu</i>
+        <button class="navbar-toggler" data-bs-toggle="offcanvas" data-bs-target="#offcanvasRight">
+          <div class="btn-burger">
+            <div class="burguer-item burguer1"></div>
+            <div class="burguer-item burguer2"></div>
+            <div class="burguer-item burguer3"></div>
+          </div>
         </button>
       </div>
     </nav>
   </header>
+
+  <!-- sidenav -->
+  <div class="sidenav offcanvas offcanvas-end" id="offcanvasRight" aria-labelledby="offcanvasRightLabel">
+    <div class="offcanvas-body">
+      <ul class="sidenav-nav alignMiddleY">
+        <li class="sidenav-item">
+          <a href="elegi-tu-cv.html" class="navLink">Elegí tu CV</a>
+        </li>
+        <li class="sidenav-item">
+          <a href="como-hago.html" class="navLink">¿Cómo hago?</a>
+        </li>
+        <li class="sidenav-item">
+          <a href="tips.html" class="navLink">Tips</a>
+        </li>
+        <li class="sidenav-item">
+          <a href="preguntas-frecuentes.html" class="navLink">¿Preguntas?</a>
+        </li>
+      </ul>
+    </div>
+  </div>
+
   <main>
     <div id="tips__header" class="sectionHeader">
       <div class="container alignMiddleY">
@@ -267,10 +292,11 @@
             </div>
           </div>
           <div class="col-sm-12 col-lg-6 footer__contact-container">
-            <div class="footer__btn-contact customBtn customBtn__text alignX">
+            <button class="footer__btn-contact customBtn customBtn__text alignX" data-bs-toggle="offcanvas"
+              data-bs-target="#offcanvasBottom" aria-controls="offcanvasBottom">
               <i class="material-icons">email</i>
               <p>Escribinos</p>
-            </div>
+            </button>
           </div>
         </div>
         <div class="row">
@@ -308,8 +334,50 @@
     </div>
   </footer>
 
+  <!-- Contact - Bottom-Sheet component -->
+  <div class="bottom-sheet-contact offcanvas offcanvas-bottom cornersTop" tabindex="-1" id="offcanvasBottom"
+    aria-labelledby="offcanvasBottomLabel">
+    <div class="offcanvas-header">
+      <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+    </div>
+    <div class="offcanvas-body">
+      <h2 class="sectionTitle">Contacto</h2>
+      <form action="" method="POST">
+        <div class="row">
+          <div class="col-sm-12 col-md-6">
+            <figure>
+              <img src="imgs/vaso.svg" class="image3D" alt="imágen 3D">
+            </figure>
+          </div>
+          <div class="col-sm-12 col-md-6">
+            <div class="contactForm__name">
+              <label for="name">Nombre</label><br />
+              <input type="text" id="name" name="name" autocomplete="off" required />
+            </div>
+            <div class="contactForm__email">
+              <label for="email">Email</label><br />
+              <input type="email" id="email" name="email" autocomplete="off" required />
+            </div>
+            <div class="contactForm__subject">
+              <label for="subject">Asunto</label><br />
+              <input type="text" id="subject" name="subject" autocomplete="off" />
+            </div>
+            <div class="contactForm__message">
+              <p>Mensaje</p>
+              <textarea name="message" id="message" cols="30" rows="5" required>
+                </textarea>
+            </div>
+            <button type="submit" name="submit" id="submit" class="btn-submit customBtn customBtn__contained">
+              Enviar
+            </button>
+          </div>
+        </div>
+      </form>
+    </div>
+  </div>
+
   <!-- Contact - Bottom-Sheet Component -->
-  <div class="contactForm__bottomSheet">
+  <!-- <div class="contactForm__bottomSheet">
     <i class="btn-close material-icons">close</i>
     <h2 class="sectionTitle">Contacto</h2>
     <form action="" method="POST">
@@ -335,7 +403,7 @@
         Enviar
       </button>
     </form>
-  </div>
+  </div> -->
 
   <!-- JQuery -->
   <script src="https://code.jquery.com/jquery-3.6.0.min.js"

@@ -1,0 +1,13 @@
+.bottom-sheet-contact {
+  height: 80vh;
+  max-height: 80vh;
+
+  .btn-close {
+    padding: 12px;
+    border-radius: 30px;
+    background-color: $translucent;
+    right: 0;
+    position: absolute;
+    transform: translateY(30px) translateX(-30px);
+  }
+}

@@ -1,0 +1,85 @@
+/* menu hamburguesa */
+.navbar-toggler {
+  border: none;
+  border-radius: none;
+  padding-right: 0;
+
+  .burguer {
+    position: relative;
+    z-index: 999999999;
+  }
+}
+
+.burguer-item {
+  width: 26px;
+  height: 3px;
+  border-radius: 10px;
+  background-color: $primaryTextColor;
+  margin-bottom: 5px;
+}
+
+#tipsScreen,
+#faqsScreen {
+  .burguer-item {
+    background-color: $whiteColor;
+  }
+}
+
+.animate {
+  background-color: $whiteColor;
+}
+
+.burguer1.animate {
+  transform: rotate(45deg) translateY(3px) translateX(8px);
+  transition: all 600ms cubic-bezier(0.68, -0.55, 0.265, 1.55);
+}
+.burguer3.animate {
+  width: 26px;
+  transform: rotate(-45deg) translateY(-3.5px) translateX(8.4px);
+  transition: all 600ms cubic-bezier(0.68, -0.55, 0.265, 1.55);
+}
+.burguer2.animate {
+  width: 0;
+  transition: all 600ms cubic-bezier(0.68, -0.55, 0.265, 1.55);
+}
+
+.burguer1.adjust,
+.burguer2.adjust {
+  transform: rotate(0deg) translateY(0);
+  transition: all 600ms cubic-bezier(0.68, -0.55, 0.265, 1.55);
+}
+.burguer3.adjust {
+  transform: translateX(0);
+  transition: all 600ms cubic-bezier(0.68, -0.55, 0.265, 1.55);
+}
+
+.btn-burguer {
+  display: inline-block;
+  width: 1.5em;
+  height: 1.5em;
+  vertical-align: middle;
+  content: "";
+  background: no-repeat center center;
+  background-size: 100% 100%;
+}
+
+@media #{$note} {
+}
+
+@media #{$tablet} {
+  .navbar-toggler {
+    padding: 0.5rem 1.5rem;
+  }
+}
+
+@media #{$mobileSm} {
+  .navbar-toggler {
+    padding: 0.5rem 1.5rem;
+  }
+}
+
+@media #{$mobile} {
+  .navbar-toggler {
+    padding: 0.5rem 1.5rem;
+  }
+}

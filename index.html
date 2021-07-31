@@ -75,12 +75,37 @@
             <i class="material-icons">arrow_upward</i>
           </li>
         </ul>
-        <button class="navbar-toggler">
-          <i class="material-icons">menu</i>
+        <button class="navbar-toggler" data-bs-toggle="offcanvas" data-bs-target="#offcanvasRight">
+          <div class="btn-burger">
+            <div class="burguer-item burguer1"></div>
+            <div class="burguer-item burguer2"></div>
+            <div class="burguer-item burguer3"></div>
+          </div>
         </button>
       </div>
     </nav>
   </header>
+
+  <!-- sidenav -->
+  <div class="sidenav offcanvas offcanvas-end" id="offcanvasRight" aria-labelledby="offcanvasRightLabel">
+    <div class="offcanvas-body">
+      <ul class="sidenav-nav alignMiddleY">
+        <li class="sidenav-item">
+          <a href="elegi-tu-cv.html" class="navLink">Elegí tu CV</a>
+        </li>
+        <li class="sidenav-item">
+          <a href="como-hago.html" class="navLink">¿Cómo hago?</a>
+        </li>
+        <li class="sidenav-item">
+          <a href="tips.html" class="navLink">Tips</a>
+        </li>
+        <li class="sidenav-item">
+          <a href="preguntas-frecuentes.html" class="navLink">¿Preguntas?</a>
+        </li>
+      </ul>
+    </div>
+  </div>
+
   <main>
     <section id="index__homeSection">
       <div class="container">
@@ -90,7 +115,7 @@
               <h1 class="
                   animate__animated 
                   animate__fadeInUp 
-                  animate__fast
+                  animate__faster
                   ">
                 Crea tu propio CV.
                 <span class="
@@ -105,7 +130,9 @@
             </div>
           </div>
           <div class="col-sm-12 col-lg-6">
-            <!-- <img src="" alt="imagen 3d" /> -->
+            <figure class="centerMiddle">
+              <img src="imgs/vaso.svg" class="image3D" alt="imágen 3D">
+            </figure>
           </div>
         </div>
       </div>
@@ -168,7 +195,9 @@
             </div>
           </div>
           <div class="col-sm-12 col-lg-6">
-            <!-- <img src="imgs/vaso.svg" alt="imagen 3d" /> -->
+            <figure class="centerMiddle">
+              <img src="imgs/vaso.svg" class="image3D" alt="imágen 3D">
+            </figure>
           </div>
         </div>
       </div>
@@ -177,7 +206,9 @@
       <div class="container">
         <div class="row">
           <div class="col-sm-12 col-lg-6">
-            <!-- <img src="" alt="imagen 3d" /> -->
+            <figure class="centerMiddle">
+              <img src="imgs/vaso.svg" class="image3D" alt="imágen 3D">
+            </figure>
           </div>
           <div class="col-sm-12 col-lg-6">
             <div class="tips__content alignMiddleY">
@@ -250,10 +281,10 @@
               </a>
             </div>
           </div>
-        </div>
-        <div class="row">
           <div class="col-sm-12 col-lg-6">
-            <!-- <img src="" alt="imagen 3d" /> -->
+            <figure class="centerMiddle">
+              <img src="imgs/vaso.svg" class="image3D" alt="imágen 3D">
+            </figure>
           </div>
         </div>
       </div>

@@ -1,0 +1,33 @@
+.sidenav {
+  width: 100%;
+  position: fixed;
+  background-color: transparent;
+  right: 0;
+  border-left: 0;
+
+  .offcanvas-body {
+    .sidenav-nav {
+      align-items: flex-end;
+      margin-right: 50px;
+
+      .sidenav-item {
+        margin: 15px 0;
+
+        a {
+          color: $whiteColor;
+          font-size: 2rem;
+          font-weight: 700;
+          @include getTransition;
+
+          &:hover {
+            color: $disableColor;
+            @include getTransition;
+          }
+        }
+      }
+    }
+    .alignMiddleY {
+      height: 90vh;
+    }
+  }
+}
