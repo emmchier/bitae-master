@@ -211,10 +211,11 @@
             </div>
           </div>
           <div class="col-sm-12 col-lg-6 footer__contact-container">
-            <div class="footer__btn-contact customBtn customBtn__text alignX">
+            <button class="footer__btn-contact customBtn customBtn__outlined alignX" data-bs-toggle="offcanvas"
+              data-bs-target="#offcanvasBottom" aria-controls="offcanvasBottom">
               <i class="material-icons">email</i>
               <p>Escribinos</p>
-            </div>
+            </button>
           </div>
         </div>
         <div class="row">
@@ -252,39 +253,94 @@
     </div>
   </footer>
 
-  <!-- Contact - Bottom-Sheet Component -->
-  <div class="contactForm__bottomSheet">
-    <i class="btn-close material-icons">close</i>
-    <h2 class="sectionTitle">Contacto</h2>
-    <form action="" method="POST">
-      <button class="btn-reset-form">Resetear formulario</button>
-      <div class="contactForm__name">
-        <label for="name">Nombre</label><br />
-        <input type="text" id="name" name="name" autocomplete="off" required />
+  <!-- Contact - Bottom-Sheet component -->
+  <div class="bottom-sheet-contact offcanvas offcanvas-bottom cornersTop" tabindex="-1" id="offcanvasBottom"
+    aria-labelledby="offcanvasBottomLabel">
+    <div class="offcanvas-header">
+      <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+    </div>
+    <div class="offcanvas-body">
+      <div class="row">
+        <div class="col-sm-12 col-lg-6">
+          <figure class="centerMiddle">
+            <img src="imgs/vaso.svg" class="image3D" alt="imágen 3D">
+          </figure>
+        </div>
+        <div class="col-sm-12 col-lg-6">
+          <h2 class="sectionTitle">Contacto</h2>
+          <div class="sended-container ocult">
+            <div id="sended-message" class="sended-message elevation1 rounded">
+              <h4>Tu mensaje ha sido enviado!</h4>
+              <p>Gracias por comunicarte con nosotros, nos pondremos en contacto a la brevedad.</p>
+            </div>
+          </div>
+          <form class="form contact-form" name="contact-form" role="form" id="contact-form" action="enviar.php"
+            method="POST" data-toggle="validator">
+            <div class="form-group">
+              <label for="nombre">Nombre</label>
+              <input name="nombre" type="text" class="form-control" id="nombre" autocomplete="off" required>
+              <div class="help-block with-errors"></div>
+            </div>
+            <div class="form-group">
+              <label for="email">E-mail</label>
+              <input name="email" type="email" class="form-control" id="email" autocomplete="off" required>
+              <div class="help-block with-errors"></div>
+            </div>
+            <div class="form-group">
+              <label for="asunto">Asunto</label>
+              <input name="asunto" type="text" class="form-control" id="asunto" autocomplete="off" required>
+              <div class="help-block with-errors"></div>
+            </div>
+            <div class="form-group">
+              <label for="mensaje">Consulta</label>
+              <textarea name="mensaje" class="form-control" id="mensaje" rows="5" required></textarea>
+              <div class="help-block with-errors"></div>
+            </div>
+            <button id="submit" name="submit" type="submit" class="
+              btn-submit 
+              hoverState 
+              customBtn
+              customBtn__outlined" value="Enviar">Enviar</button>
+            <div class="help-submit"></div>
+          </form>
+        </div>
       </div>
-      <div class="contactForm__email">
-        <label for="email">Email</label><br />
-        <input type="email" id="email" name="email" autocomplete="off" required />
+    </div>
+  </div>
+
+  <!-- Progress bar -->
+  <div id="loaders" class="send-overlay fullHeight valign-wrapper">
+    <div class="container fullHeight progress-content">
+      <div class="container-send">
+        <div class="spinner-grow" role="status">
+          <span class="sr-only">Loading...</span>
+        </div>
+        <div class="spinner-grow" role="status">
+          <span class="sr-only">Loading...</span>
+        </div>
+        <div class="spinner-grow " role="status">
+          <span class="sr-only">Loading...</span>
+        </div>
+        <div class="spinner-grow" role="status">
+          <span class="sr-only">Loading...</span>
+        </div>
+        <div class="spinner-grow" role="status">
+          <span class="sr-only">Loading...</span>
+        </div>
+        <div class="spinner-grow" role="status">
+          <span class="sr-only">Loading...</span>
+        </div>
       </div>
-      <div class="contactForm__subject">
-        <label for="subject">Asunto</label><br />
-        <input type="text" id="subject" name="subject" autocomplete="off" />
-      </div>
-      <div class="contactForm__message">
-        <p>Mensaje</p>
-        <textarea name="message" id="message" cols="30" rows="5" required>
-          </textarea>
-      </div>
-      <button type="submit" name="submit" id="submit" class="btn-submit customBtn customBtn__contained">
-        Enviar
-      </button>
-    </form>
+    </div>
   </div>
 
   <!-- JQuery -->
   <script src="https://code.jquery.com/jquery-3.6.0.min.js"
     integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous">
     </script>
+
+  <!-- Babel -->
+  <script src="https://unpkg.com/babel-standalone@6/babel.min.js"></script>
 
   <!-- Popper -->
   <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"
@@ -296,7 +352,14 @@
     integrity="sha384-gtEjrD/SeCtmISkJkNUaaKMoLD0//ElJ19smozuHV6z3Iehds+3Ulb9Bn9Plx0x4" crossorigin="anonymous">
     </script>
 
+  <!-- aos animation -->
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+
+  <!-- Bootstrap Validator -->
+  <script src="js/libraries/bootstrap/validator.min.js"></script>
+
   <script src="js/main.js"></script>
+  <script src="js/form.js"></script>
 </body>
 
 </html>

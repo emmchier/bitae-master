@@ -1,3 +1,19 @@
+@each $section in $section_types {
+  ##{$section} .bottom-sheet-contact {
+    @if $section == "homeScreen" {
+      background-color: $primaryDarkColor;
+    } @else if $section == "procedureScreen" {
+      background-color: $como-lo-hago-dark;
+    } @else if $section == "tipsScreen" {
+      background-color: $tips-dark;
+    } @else if $section == "faqsScreen" {
+      background-color: $preguntas-dark;
+    } @else {
+      background-color: $whiteColor;
+    }
+  }
+}
+
 .bottom-sheet-contact {
   height: 80vh;
   max-height: 80vh;

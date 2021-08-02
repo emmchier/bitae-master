@@ -79,7 +79,6 @@ i {
 #tipsScreen p,
 #tipsScreen a,
 #tipsScreen i,
-#faqsScreen h1,
 #faqsScreen h2,
 #faqsScreen h3,
 #faqsScreen p,
@@ -290,10 +289,6 @@ button:focus,
 .noPadding {
   padding-right: 0 !important;
   overflow-y: inherit;
-}
-
-.cornersTop {
-  border-radius: 30px 30px 0 0;
 }
 
 .image3D {
