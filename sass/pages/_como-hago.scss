@@ -1,0 +1,66 @@
+#procedureScreen {
+  #procedureSection {
+    height: auto;
+    .procedure__timeLineContainer {
+      display: flex;
+      flex-direction: column;
+      position: relative;
+
+      .procedure__stepNumber--card {
+        width: 100px;
+        height: 100px;
+        @extend %cardProps;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        position: relative;
+
+        .procedure__stepNumber {
+          font-size: $h2;
+          position: absolute;
+        }
+      }
+
+      .procedure__lineContainer {
+        width: 100px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        .procedure__timeLine {
+          background-color: $secondaryColor;
+          width: 8px;
+          height: 150px;
+          margin: 25px 0;
+        }
+      }
+    }
+
+    .procedure__stepDescription {
+      padding: 0 50px;
+      p {
+        font-size: 1.5rem;
+      }
+    }
+
+    .procedure__iconContainer {
+      .icon {
+        height: 200px;
+        width: auto;
+        display: inline;
+        margin-left: 50px;
+      }
+    }
+  }
+
+  .procedure__tipsSectionContent {
+    @extend %cardProps;
+    padding: 30px;
+    margin: 10vh 0;
+    border: none;
+    overflow: hidden;
+
+    .card-title {
+      margin-bottom: 20px;
+    }
+  }
+}

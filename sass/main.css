@@ -1,12 +1,17 @@
 @charset "UTF-8";
+#procedureScreen .procedure__tipsSectionContent, #procedureScreen #procedureSection .procedure__timeLineContainer .procedure__stepNumber--card {
+  background-color: #98eaf6;
+  border-radius: 15px;
+}
+
 .customBtn {
   transition: background-color 0.2s;
   width: auto;
   height: auto;
   display: inline-block;
   border-radius: 5px;
-  background-color: #FEDD02;
-  color: #022F6E;
+  background-color: #fedd02;
+  color: #022f6e;
   padding: 10px 30px;
   font-size: 1.1rem;
   position: relative;
@@ -29,7 +34,7 @@
 
 .customBtn__outlined.disabled {
   background-color: transparent;
-  border: 1px solid #B0BEC5;
+  border: 1px solid #b0bec5;
 }
 
 .customBtn__text.disabled {
@@ -41,7 +46,7 @@
 }
 
 .customBtn__contained {
-  background-color: #022F6E;
+  background-color: #022f6e;
   border: none;
   color: #ffffff;
   text-decoration: none;
@@ -76,19 +81,19 @@
 
 .customBtn__outlined {
   background-color: transparent;
-  border: 1px solid #022F6E;
-  color: #022F6E;
+  border: 1px solid #022f6e;
+  color: #022f6e;
   text-decoration: none;
 }
 .customBtn__outlined:hover {
-  background-color: #022F6E;
-  border: 1px solid #022F6E;
+  background-color: #022f6e;
+  border: 1px solid #022f6e;
   color: #ffffff;
   text-decoration: none;
 }
 .customBtn__outlined:focus {
   background-color: #2c3e77;
-  border: 1px solid #022F6E;
+  border: 1px solid #022f6e;
   color: #ffffff;
   text-decoration: none;
 }
@@ -111,7 +116,7 @@
 .customBtn__text {
   background-color: transparent;
   border: none;
-  color: #022F6E;
+  color: #022f6e;
   text-decoration: none;
 }
 .customBtn__text:hover {
@@ -174,7 +179,7 @@
   width: 58px;
   height: 58px;
   border-radius: 50%;
-  background-color: #FEDD02;
+  background-color: #fedd02;
   padding: 0;
   display: flex;
   align-items: center;
@@ -184,7 +189,7 @@
 @media (max-width: 600px) {
   .customBtn__contained:hover,
 .customBtn__fab:hover {
-    background-color: #FEDD02;
+    background-color: #fedd02;
     color: #ffffff;
   }
 
@@ -194,13 +199,13 @@
 
   .customBtn__outlined:hover {
     background-color: transparent;
-    color: #022F6E;
-    border: 1px solid #022F6E;
+    color: #022f6e;
+    border: 1px solid #022f6e;
   }
 
   .customBtn__text:hover {
     background-color: transparent;
-    color: #022F6E;
+    color: #022f6e;
     text-decoration: none;
   }
 }
@@ -209,7 +214,7 @@ footer {
   z-index: 9 !important;
 }
 footer p, footer a, footer h1 {
-  color: #022F6E;
+  color: #022f6e;
 }
 footer .footer__contact-container {
   display: flex;
@@ -248,7 +253,7 @@ footer .copyright__separator {
   margin: 0 10px;
 }
 footer .footer__btn-contact p:hover {
-  color: #FEDD02;
+  color: #fedd02;
 }
 
 @media (max-width: 600px) {
@@ -556,7 +561,7 @@ header {
   transition: 0.1s ease-in-out;
 }
 .sidenav .offcanvas-body .sidenav-nav .sidenav-item a:hover {
-  color: #B0BEC5;
+  color: #b0bec5;
   transition: 0.1s ease-in-out;
 }
 .sidenav .offcanvas-body .alignMiddleY {
@@ -578,7 +583,7 @@ header {
   width: 26px;
   height: 3px;
   border-radius: 10px;
-  background-color: #022F6E;
+  background-color: #022f6e;
   margin-bottom: 5px;
 }
 
@@ -660,7 +665,7 @@ header {
 }
 
 #faqsScreen .bottom-sheet-contact {
-  background-color: #8092FF;
+  background-color: #8092ff;
 }
 
 #termsScreen .bottom-sheet-contact {
@@ -682,6 +687,60 @@ header {
   right: 0;
   position: absolute;
   transform: translateY(30px) translateX(-30px);
+}
+
+#procedureScreen #procedureSection {
+  height: auto;
+}
+#procedureScreen #procedureSection .procedure__timeLineContainer {
+  display: flex;
+  flex-direction: column;
+  position: relative;
+}
+#procedureScreen #procedureSection .procedure__timeLineContainer .procedure__stepNumber--card {
+  width: 100px;
+  height: 100px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+}
+#procedureScreen #procedureSection .procedure__timeLineContainer .procedure__stepNumber--card .procedure__stepNumber {
+  font-size: 3rem;
+  position: absolute;
+}
+#procedureScreen #procedureSection .procedure__timeLineContainer .procedure__lineContainer {
+  width: 100px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+#procedureScreen #procedureSection .procedure__timeLineContainer .procedure__lineContainer .procedure__timeLine {
+  background-color: #022f6e;
+  width: 8px;
+  height: 150px;
+  margin: 25px 0;
+}
+#procedureScreen #procedureSection .procedure__stepDescription {
+  padding: 0 50px;
+}
+#procedureScreen #procedureSection .procedure__stepDescription p {
+  font-size: 1.5rem;
+}
+#procedureScreen #procedureSection .procedure__iconContainer .icon {
+  height: 200px;
+  width: auto;
+  display: inline;
+  margin-left: 50px;
+}
+#procedureScreen .procedure__tipsSectionContent {
+  padding: 30px;
+  margin: 10vh 0;
+  border: none;
+  overflow: hidden;
+}
+#procedureScreen .procedure__tipsSectionContent .card-title {
+  margin-bottom: 20px;
 }
 
 #cvsSection {
@@ -804,6 +863,16 @@ header {
   height: auto;
 }
 
+#procedureScreen #procedureSection .procedure__timeLineContainer .procedure__stepNumber--card, #procedureScreen .procedure__tipsSectionContent {
+  background-color: #98eaf6;
+  border-radius: 15px;
+}
+
+#procedureScreen #procedureSection .procedure__timeLineContainer .procedure__stepNumber--card, #procedureScreen .procedure__tipsSectionContent {
+  background-color: #98eaf6;
+  border-radius: 15px;
+}
+
 html,
 body {
   margin: 0;
@@ -870,7 +939,7 @@ h3,
 p,
 a,
 i {
-  color: #022F6E;
+  color: #022f6e;
 }
 
 #tipsScreen h1,
@@ -974,7 +1043,7 @@ ul {
   color: #42579d;
   cursor: default;
   border: none;
-  background-color: #B0BEC5;
+  background-color: #b0bec5;
 }
 
 .autoHeight {
@@ -1022,21 +1091,22 @@ ul {
 
 ::-webkit-scrollbar-thumb {
   border-radius: 10px;
-  background: #B0BEC5;
+  background: #b0bec5;
 }
 
 ::-webkit-scrollbar-thumb:window-inactive {
-  background: #B0BEC5;
+  background: #b0bec5;
 }
 
 .customCard {
   background-color: #ffffff;
+  border-radius: 5px;
 }
 
 .tag {
   padding: 6px 15px;
   border-radius: 20px;
-  background-color: #3C3D40;
+  background-color: #3c3d40;
   color: #ffffff;
   display: inline;
   font-size: 14px;
@@ -1053,7 +1123,7 @@ ul {
   right: 0;
   margin: 20px 30px;
   padding: 10px;
-  color: #022F6E;
+  color: #022f6e;
   border-radius: 50%;
   display: none;
 }
@@ -1071,26 +1141,26 @@ ul {
 }
 
 #index__homeSection {
-  background-color: #FEDD02;
+  background-color: #fedd02;
 }
 
 #index__procedureSection,
 #procedureScreen,
 #procedureScreen footer {
-  background-color: #98EAF6;
+  background-color: #98eaf6;
 }
 
 #index__tipsSection,
 #tipsScreen,
 #tipsScreen footer {
-  background-color: #8C8C8C;
+  background-color: #8c8c8c;
 }
 
 #index__faqsSection,
 #faqsScreen,
 #faqsScreen footer,
 #homeScreen footer {
-  background-color: #8092FF;
+  background-color: #8092ff;
 }
 
 .scrollAppear {

@@ -42,3 +42,10 @@
   display: -ms-flexbox;
   display: flex;
 }
+
+// extend
+
+%cardProps {
+  background-color: $como-lo-hago-light;
+  border-radius: $base_border_radius;
+}
