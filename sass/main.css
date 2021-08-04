@@ -1,7 +1,7 @@
 @charset "UTF-8";
 #procedureScreen .procedure__tipsSectionContent, #procedureScreen #procedureSection .procedure__timeLineContainer .procedure__stepNumber--card {
   background-color: #98eaf6;
-  border-radius: 15px;
+  border-radius: 20px;
 }
 
 .customBtn {
@@ -9,7 +9,7 @@
   width: auto;
   height: auto;
   display: inline-block;
-  border-radius: 5px;
+  border-radius: 10px;
   background-color: #fedd02;
   color: #022f6e;
   padding: 10px 30px;
@@ -42,7 +42,7 @@
 }
 
 .customBtn--fullRounded {
-  border-radius: 15px;
+  border-radius: 20px;
 }
 
 .customBtn__contained {
@@ -213,7 +213,9 @@ footer {
   padding: 3rem 0;
   z-index: 9 !important;
 }
-footer p, footer a, footer h1 {
+footer p,
+footer a,
+footer h1 {
   color: #022f6e;
 }
 footer .footer__contact-container {
@@ -226,8 +228,11 @@ footer .footer__nav {
   transform: translateY(8px);
 }
 footer .footer__btn-contact.customBtn {
-  padding: 10px 0;
+  padding: 10px 15px;
   margin: 0;
+}
+footer .footer__btn-contact.customBtn i {
+  margin-right: 10px;
 }
 footer .footer__contact-container {
   display: flex;
@@ -252,8 +257,21 @@ footer .footer__nav-list li a:hover {
 footer .copyright__separator {
   margin: 0 10px;
 }
-footer .footer__btn-contact p:hover {
-  color: #fedd02;
+footer .footer__btn-contact.customBtn:hover {
+  border: 1px solid #022f6e;
+}
+footer .footer__btn-contact.customBtn:hover p,
+footer .footer__btn-contact.customBtn:hover i {
+  color: #ffffff;
+}
+
+#tipsScreen .footer__btn-contact.customBtn,
+#faqsScreen .footer__btn-contact.customBtn {
+  border-color: #ffffff;
+}
+#tipsScreen .footer__btn-contact.customBtn:hover,
+#faqsScreen .footer__btn-contact.customBtn:hover {
+  border: 1px solid #022f6e;
 }
 
 @media (max-width: 600px) {
@@ -503,11 +521,11 @@ header {
 }
 
 #tipsScreen .sectionHeader {
-  background-image: linear-gradient(to right, #767676, #8c8c8c);
+  background-image: linear-gradient(to right, #767676, #9f9e9e);
 }
 
 #faqsScreen .sectionHeader {
-  background-image: linear-gradient(to right, #919ef0, #8092ff);
+  background-image: linear-gradient(to right, #9ba8f7, #8092ff);
 }
 
 #termsScreen .sectionHeader {
@@ -729,6 +747,9 @@ header {
   transform: translateY(30px) translateX(-30px);
 }
 
+#procedureScreen {
+  background-image: linear-gradient(to bottom, #98eaf6, #65c3d1);
+}
 #procedureScreen #procedureSection {
   height: auto;
 }
@@ -783,41 +804,51 @@ header {
   margin-bottom: 20px;
 }
 
-#cvsSection {
+#cvsScreen {
+  background-image: linear-gradient(to bottom, #ffffff, #3c3d4019);
+}
+#cvsScreen #cvsSection {
   height: auto;
+  margin-top: 20vh;
 }
-#cvsSection .cvsSection__cvsContent .cvsSection__cvsInfo {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  flex-direction: column;
+#cvsScreen #cvsSection h3 {
+  font-weight: 600;
+  font-size: 3rem;
 }
-#cvsSection .cvsSection__cvsContent .cvsSection__cvsInfo h2 {
-  font-weight: 500;
-  text-align: center;
-  margin-bottom: 30px;
+#cvsScreen #cvsSection h4 {
+  font-size: 1.5rem;
+  font-weight: 300;
+  margin-bottom: 20px;
+  color: #022f6e;
 }
-
-.hashtagsList .tag:nth-child(1) {
+#cvsScreen #cvsSection .article__info h3 {
+  font-weight: 600;
+  font-size: 3rem;
+}
+#cvsScreen #cvsSection .article__info .sectionDesc {
+  font-size: 1.5rem;
+  font-weight: 300;
+  margin-bottom: 20px;
+}
+#cvsScreen .hashtagsList .tag:nth-child(1) {
   margin-left: 0;
 }
-
-.cvs__article {
+#cvsScreen .cvs__article {
   height: 100vh;
   margin: 3rem 15px;
   padding: 2rem;
   border-radius: 20px;
 }
-.cvs__article .article__info {
+#cvsScreen .cvs__article .article__info {
   margin-left: 3rem;
 }
-.cvs__article .article__info h2 {
+#cvsScreen .cvs__article .article__info h2 {
   font-weight: 600;
 }
-.cvs__article .article__info .btn-ver-mas {
+#cvsScreen .cvs__article .article__info .btn-ver-mas {
   margin-top: 20px;
 }
-.cvs__article .article__img {
+#cvsScreen .cvs__article .article__img {
   align-items: center;
   display: flex;
   justify-content: center;
@@ -825,10 +856,24 @@ header {
 
 #faqsSection {
   height: auto;
+  padding: 10vh 0;
+}
+#faqsSection h3 {
+  font-weight: 600;
+  font-size: 3rem;
+}
+#faqsSection h4 {
+  font-size: 1.5rem;
+  font-weight: 300;
+  margin-bottom: 10vh;
+  color: #ffffff;
 }
 #faqsSection .accordion-item {
   background-color: transparent;
   border: none;
+}
+#faqsSection .accordion-button:after {
+  background-image: url("data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16' fill='%23ffffff'><path fill-rule='evenodd' d='M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z'/></svg>") !important;
 }
 #faqsSection .accordion-button,
 #faqsSection .accordion-button:not(.collapsed) {
@@ -869,70 +914,136 @@ header {
   padding-bottom: 40px;
 }
 
+#homeScreen #index__homeSection {
+  background-image: linear-gradient(to right, #c6ac00, #fedd02);
+}
+#homeScreen #index__cvsSection {
+  background: url("../../imgs/index-cvs-hero.png") no-repeat 50% 50%;
+  background-size: cover;
+  overflow: hidden;
+  text-align: center;
+}
+#homeScreen #index__cvsSection .sectionDesc {
+  margin-top: 10vh;
+}
+#homeScreen #index__cvsSection .btn-ver-mas {
+  margin-top: 30px;
+  width: 20vw;
+}
+#homeScreen #index__procedureSection {
+  background-image: linear-gradient(to right, #65c3d1, #98eaf6);
+}
+#homeScreen #index__tipsSection {
+  background-image: linear-gradient(to right, #9f9e9e, #767676);
+}
+#homeScreen #index__faqsSection {
+  background-image: linear-gradient(to top, #8092ff, #9ba8f7);
+}
+#homeScreen #homeScreen footer {
+  background-image: linear-gradient(to top, #8092ff, #9ba8f7);
+}
+
 .legalScreen {
   padding-top: 25vh;
 }
 
-#tipsSection {
+#tipsScreen {
+  background-image: linear-gradient(to bottom, #9f9e9e, #767676);
+}
+#tipsScreen #tipsSection {
   height: auto;
 }
-#tipsSection .sectionDesc {
-  padding: 6rem 0;
+#tipsScreen #tipsSection h3 {
+  font-weight: 600;
+  font-size: 3rem;
+}
+#tipsScreen #tipsSection h4 {
+  font-size: 1.5rem;
+  font-weight: 300;
+  margin-bottom: 10vh;
   color: #ffffff;
+}
+#tipsScreen .articleTitle,
+#tipsScreen .articleDesc {
+  color: #ffffff;
+}
+#tipsScreen .articleTitle {
   font-size: 2rem;
 }
-
-.articleTitle,
-.articleDesc {
-  color: #ffffff;
-}
-
-.articleTitle {
-  font-size: 2rem;
-}
-
-.articleDesc {
+#tipsScreen .articleDesc {
   font-size: 1.5rem;
   font-weight: 400;
 }
-
-.tips__tipCard {
-  width: 95%;
+#tipsScreen .tips__tipCard {
   min-height: 50vh;
   display: flex;
   align-items: center;
   justify-content: flex-start;
-  margin: 20px;
   padding: 30px;
   border-radius: 20px;
-  background-color: transparent;
+  background-color: #9f9e9e;
   border: none;
 }
-.tips__tipCard .card-img-top {
+#tipsScreen .tips__tipCard .card-img-top {
   width: 100%;
   margin-bottom: 30px;
 }
-.tips__tipCard .tips__cvImage {
+#tipsScreen .tips__tipCard .tips__cvImage {
   padding-right: 30px;
 }
-
-.tips__tipCard figure,
-.tips__tipCard img {
-  width: 200px;
+#tipsScreen .tips__tipCard figure,
+#tipsScreen .tips__tipCard img {
+  width: 300px;
+  margin-top: 10px;
 }
-
-#tips__mediumSection {
+#tipsScreen #tips__mediumSection {
   height: auto;
+  padding: 15vh 0;
+}
+#tipsScreen #tips__mediumSection .tips__mediumSection--article {
+  background-color: transparent;
+  border: none;
+  box-shadow: none;
+}
+#tipsScreen #tips__mediumSection .tips__mediumSection--article .tips__mediumSection--imgContainer {
+  overflow: hidden;
+  max-height: 30vh;
+}
+#tipsScreen #tips__mediumSection .tips__mediumSection--article .card-body {
+  padding: 0;
+}
+#tipsScreen #tips__mediumSection .tips__mediumSection--article .card-body .articleTitle {
+  margin: 20px 0;
+}
+#tipsScreen #tips__mediumSection .tips__mediumSection--article .card-body .articleDesc {
+  margin-bottom: 30px;
+  font-weight: 300;
+}
+#tipsScreen #tips__mediumSection .tips__mediumSection--article .btn-medium {
+  display: block;
+  padding-bottom: 15px;
+  border-color: #ffffff;
+}
+#tipsScreen #tips__mediumSection .tips__mediumSection--article .btn-medium:hover {
+  border: 1px solid #022f6e;
+}
+#tipsScreen #tips__mediumSection .tips__mediumSection--article .btn-medium .arrow-btn {
+  transform: translateY(7px);
+}
+#tipsScreen .col-md-8,
+#tipsScreen .col-md-4,
+#tipsScreen .col-md-12 {
+  padding: 0;
 }
 
 #procedureScreen #procedureSection .procedure__timeLineContainer .procedure__stepNumber--card, #procedureScreen .procedure__tipsSectionContent {
   background-color: #98eaf6;
-  border-radius: 15px;
+  border-radius: 20px;
 }
 
 #procedureScreen #procedureSection .procedure__timeLineContainer .procedure__stepNumber--card, #procedureScreen .procedure__tipsSectionContent {
   background-color: #98eaf6;
-  border-radius: 15px;
+  border-radius: 20px;
 }
 
 html,
@@ -1207,15 +1318,21 @@ ul {
 }
 
 #index__procedureSection,
-#procedureScreen,
-#procedureScreen footer {
+#procedureScreen {
   background-color: #98eaf6;
 }
 
+#procedureScreen footer {
+  background-color: #65c3d1;
+}
+
 #index__tipsSection,
-#tipsScreen,
+#tipsScreen {
+  background-color: #9f9e9e;
+}
+
 #tipsScreen footer {
-  background-color: #8c8c8c;
+  background-color: #767676;
 }
 
 #index__faqsSection,

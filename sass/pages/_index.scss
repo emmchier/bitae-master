@@ -1,0 +1,39 @@
+#homeScreen {
+  @each $section in $index_sections {
+    ##{$section} {
+      @if $section == "index__homeSection" {
+        @include gradientBackground(right, $primaryDarkColor, $primaryColor);
+      } @else if $section == "index__cvsSection" {
+        background: url("../../imgs/index-cvs-hero.png") no-repeat 50% 50%;
+        background-size: cover;
+        overflow: hidden;
+        text-align: center;
+
+        .sectionDesc {
+          margin-top: 10vh;
+        }
+
+        .btn-ver-mas {
+          margin-top: 30px;
+          width: 20vw;
+        }
+      } @else if $section == "index__procedureSection" {
+        @include gradientBackground(
+          right,
+          $como-lo-hago-dark,
+          $como-lo-hago-light
+        );
+      } @else if $section == "index__tipsSection" {
+        @include gradientBackground(right, $tips-light, $tips-dark);
+      } @else if $section == "index__faqsSection" {
+        @include gradientBackground(top, $preguntas-dark, $preguntas-light);
+      } @else {
+        background-color: $whiteColor;
+      }
+    }
+  }
+
+  #homeScreen footer {
+    @include gradientBackground(top, $preguntas-dark, $preguntas-light);
+  }
+}

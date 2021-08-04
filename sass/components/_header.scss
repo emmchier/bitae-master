@@ -28,13 +28,17 @@ header {
 @each $section in $section_types {
   ##{$section} .sectionHeader {
     @if $section == "procedureScreen" {
-      @include gradientBackground($como-lo-hago-dark, $como-lo-hago-light);
+      @include gradientBackground(
+        right,
+        $como-lo-hago-dark,
+        $como-lo-hago-light
+      );
     } @else if $section == "tipsScreen" {
-      @include gradientBackground($tips-dark, $tips-light);
+      @include gradientBackground(right, $tips-dark, $tips-light);
     } @else if $section == "faqsScreen" {
-      @include gradientBackground($preguntas-light, $preguntas-dark);
+      @include gradientBackground(right, $preguntas-light, $preguntas-dark);
     } @else {
-      @include gradientBackground($translucent, $translucentWhiteColor);
+      @include gradientBackground(right, $translucent, $translucentWhiteColor);
     }
   }
 }

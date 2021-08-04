@@ -255,15 +255,21 @@ ul {
 }
 
 #index__procedureSection,
-#procedureScreen,
-#procedureScreen footer {
+#procedureScreen {
   background-color: $como-lo-hago-light;
 }
 
+#procedureScreen footer {
+  background-color: $como-lo-hago-dark;
+}
+
 #index__tipsSection,
-#tipsScreen,
-#tipsScreen footer {
+#tipsScreen {
   background-color: $tips-light;
+}
+
+#tipsScreen footer {
+  background-color: $tips-dark;
 }
 
 #index__faqsSection,

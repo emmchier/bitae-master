@@ -1,4 +1,6 @@
 #procedureScreen {
+  @include gradientBackground(bottom, $como-lo-hago-light, $como-lo-hago-dark);
+
   #procedureSection {
     height: auto;
     .procedure__timeLineContainer {

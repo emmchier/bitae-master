@@ -2,6 +2,10 @@
 $section_types: "homeScreen", "procedureScreen", "cvsScreen", "tipsScreen",
   "faqsScreen", "termsScreen", "policyScreen";
 
+// index sections
+$index_sections: "index__homeSection", "index__cvsSection",
+  "index__procedureSection", "index__tipsSection", "index__faqsSection";
+
 // headers
 $header1: 3.5rem; // h1
 $header2: 2.5rem; // h2
@@ -13,7 +17,7 @@ $header6: 0.1rem; // h6
 $header_weight: 600;
 
 // borders
-$base_border_radius: 15px;
+$base_border_radius: 20px;
 
 // text sizes
 $base_primary_text: 1.5rem;
@@ -50,7 +54,7 @@ $btn_text_size_large: 1.3rem;
 $btn_padding: 10px 30px;
 $btn_padding_y: 10px;
 $btn_padding_x: 30px;
-$btn_border_radius: 5px;
+$btn_border_radius: 10px;
 $btn_icon_size: 2rem;
 
 // buttons - fab

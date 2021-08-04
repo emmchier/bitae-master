@@ -1,54 +1,108 @@
-#tipsSection {
+#tipsScreen {
+  @include gradientBackground(bottom, $tips-light, $tips-dark);
+
+  #tipsSection {
     height: auto;
-    
-    .sectionDesc {
-        padding: 6rem 0;
-        color: $whiteColor;
-        font-size: 2rem;
+
+    h3 {
+      font-weight: 600;
+      font-size: 3rem;
     }
-}
 
-.articleTitle,
-.articleDesc {
+    h4 {
+      font-size: 1.5rem;
+      font-weight: 300;
+      margin-bottom: 10vh;
+      color: $whiteColor;
+    }
+  }
+
+  .articleTitle,
+  .articleDesc {
     color: $whiteColor;
-}
+  }
 
-.articleTitle {
+  .articleTitle {
     font-size: $header3;
-}
+  }
 
-.articleDesc {
+  .articleDesc {
     font-size: $base_primary_text;
     font-weight: $base_text_weight;
-}
+  }
 
-.tips__tipCard {
-    width: 95%; 
+  .tips__tipCard {
     min-height: 50vh;
     display: flex;
     align-items: center;
     justify-content: flex-start;
-    margin: 20px;
     padding: 30px;
     border-radius: 20px;
-    background-color: transparent;
+    background-color: $tips-light;
     border: none;
 
     .card-img-top {
-        width: 100%;
-        margin-bottom: 30px;
+      width: 100%;
+      margin-bottom: 30px;
     }
 
     .tips__cvImage {
-        padding-right: 30px;
+      padding-right: 30px;
     }
-}
+  }
 
-.tips__tipCard figure,
-.tips__tipCard img {
-    width: 200px;
-}
+  .tips__tipCard figure,
+  .tips__tipCard img {
+    width: 300px;
+    margin-top: 10px;
+  }
 
-#tips__mediumSection {
+  #tips__mediumSection {
     height: auto;
+    padding: 15vh 0;
+
+    .tips__mediumSection--article {
+      background-color: transparent;
+      border: none;
+      box-shadow: none;
+
+      .tips__mediumSection--imgContainer {
+        overflow: hidden;
+        max-height: 30vh;
+      }
+
+      .card-body {
+        padding: 0;
+
+        .articleTitle {
+          margin: 20px 0;
+        }
+
+        .articleDesc {
+          margin-bottom: 30px;
+          font-weight: 300;
+        }
+      }
+
+      .btn-medium {
+        display: block;
+        padding-bottom: 15px;
+        border-color: $whiteColor;
+
+        &:hover {
+          border: 1px solid $secondaryColor;
+        }
+
+        .arrow-btn {
+          transform: translateY(7px);
+        }
+      }
+    }
+  }
+
+  .col-md-8,
+  .col-md-4,
+  .col-md-12 {
+    padding: 0;
+  }
 }

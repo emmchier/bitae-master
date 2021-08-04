@@ -1,5 +1,5 @@
-@mixin gradientBackground($from, $to) {
-  background-image: linear-gradient(to right, $from, $to);
+@mixin gradientBackground($direction, $from, $to) {
+  background-image: linear-gradient(to $direction, $from, $to);
 }
 
 @mixin borderBox {
