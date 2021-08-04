@@ -29,19 +29,19 @@
       background-color: $translucent;
     }
   }
-}
 
-.navbar.changeState {
-  height: 12vh;
-  min-height: 12vh;
-  box-shadow: 0 0 1rem 0 rgba(0, 0, 0, 0.2);
-  backdrop-filter: blur(20px);
-  @include getTransition;
-
-  .brand-logo {
-    transform: scale(0.7);
-    margin-right: 12px;
+  &.changeState {
+    height: 12vh;
+    min-height: 12vh;
+    box-shadow: 0 0 1rem 0 rgba(0, 0, 0, 0.2);
+    backdrop-filter: blur(20px);
     @include getTransition;
+
+    .brand-logo {
+      transform: scale(0.7);
+      margin-right: 12px;
+      @include getTransition;
+    }
   }
 }
 
@@ -64,6 +64,32 @@
 }
 
 @media #{$mobile} {
+  .navbar {
+    padding: 0;
+    height: auto;
+    min-height: auto;
+    box-shadow: 0 0 1rem 0 rgba(0, 0, 0, 0.2);
+
+    &.changeState {
+      height: auto;
+      min-height: auto;
+      backdrop-filter: blur(20px);
+
+      .brand-logo {
+        transform: none;
+        margin-right: 12px;
+        @include getTransition;
+      }
+    }
+
+    .navbar-brand {
+      .brand-logo {
+        height: 35px;
+        margin-right: 10px;
+      }
+    }
+  }
+
   .navbar-nav {
     display: none;
   }
