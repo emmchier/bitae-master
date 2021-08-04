@@ -29,7 +29,7 @@
         align-items: center;
         justify-content: center;
         .procedure__timeLine {
-          background-color: $secondaryColor;
+          background-color: $primaryTextColor;
           width: 8px;
           height: 150px;
           margin: 25px 0;
@@ -63,6 +63,71 @@
 
     .card-title {
       margin-bottom: 20px;
+    }
+  }
+}
+
+@media #{$note} {
+}
+
+@media #{$tablet} {
+}
+
+@media #{$mobileSm} {
+}
+
+@media #{$mobile} {
+  #procedureScreen {
+    h3 {
+      font-size: 2.5rem !important;
+    }
+
+    h4 {
+      font-size: 5rem;
+      font-weight: 300;
+      margin-bottom: 20px;
+      color: $primaryTextColor;
+    }
+
+    #procedureSection {
+      .procedure__timeLineContainer {
+        width: 60px;
+        .procedure__stepNumber--card {
+          width: 60px;
+          height: 60px;
+
+          .procedure__stepNumber {
+            font-size: 2.5rem;
+          }
+        }
+
+        .procedure__lineContainer {
+          align-items: flex-start;
+          justify-content: flex-start;
+          margin-left: 25px;
+          .procedure__timeLine {
+            background-color: $primaryTextColor;
+            height: 50vh;
+            opacity: 0.8;
+          }
+        }
+      }
+
+      .procedure__stepDescription {
+        padding: 0;
+        p {
+          font-size: 1.5rem;
+        }
+      }
+
+      .procedure__iconContainer {
+        .icon {
+          margin: 30px;
+        }
+      }
+    }
+    .procedure__tipsSectionContent {
+      padding: 20px;
     }
   }
 }

@@ -9,15 +9,6 @@
 @import "./components/burguer";
 @import "./components/bottom-sheet-contact";
 
-// pages
-@import "./pages/404";
-@import "./pages/como-hago";
-@import "./pages/elige-tu-cv";
-@import "./pages/faqs";
-@import "./pages/index";
-@import "./pages/legal";
-@import "./pages/tips";
-
 // utilities
 @import "./utilities/media-queries";
 @import "./utilities/mixins";
@@ -27,3 +18,12 @@
 @import "./base/theme";
 @import "./base/dimens";
 @import "./base/base";
+
+// pages
+@import "./pages/404";
+@import "./pages/como-hago";
+@import "./pages/faqs";
+@import "./pages/index";
+@import "./pages/legal";
+@import "./pages/tips";
+@import "./pages/elige-tu-cv";

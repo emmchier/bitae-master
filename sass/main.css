@@ -11,7 +11,7 @@
   display: inline-block;
   border-radius: 10px;
   background-color: #fedd02;
-  color: #022f6e;
+  color: #2b2c2c;
   padding: 10px 30px;
   font-size: 1.1rem;
   position: relative;
@@ -46,7 +46,7 @@
 }
 
 .customBtn__contained {
-  background-color: #022f6e;
+  background-color: #2b2c2c;
   border: none;
   color: #ffffff;
   text-decoration: none;
@@ -81,19 +81,19 @@
 
 .customBtn__outlined {
   background-color: transparent;
-  border: 1px solid #022f6e;
-  color: #022f6e;
+  border: 1px solid #2b2c2c;
+  color: #2b2c2c;
   text-decoration: none;
 }
 .customBtn__outlined:hover {
-  background-color: #022f6e;
-  border: 1px solid #022f6e;
+  background-color: #2b2c2c;
+  border: 1px solid #2b2c2c;
   color: #ffffff;
   text-decoration: none;
 }
 .customBtn__outlined:focus {
   background-color: #2c3e77;
-  border: 1px solid #022f6e;
+  border: 1px solid #2b2c2c;
   color: #ffffff;
   text-decoration: none;
 }
@@ -199,8 +199,8 @@
 
   .customBtn__outlined:hover {
     background-color: transparent;
-    color: #022f6e;
-    border: 1px solid #022f6e;
+    color: #2b2c2c;
+    border: 1px solid #2b2c2c;
   }
 
   .customBtn__text:hover {
@@ -258,7 +258,7 @@ footer .copyright__separator {
   margin: 0 10px;
 }
 footer .footer__btn-contact.customBtn:hover {
-  border: 1px solid #022f6e;
+  border: 1px solid #2b2c2c;
 }
 footer .footer__btn-contact.customBtn:hover p,
 footer .footer__btn-contact.customBtn:hover i {
@@ -271,7 +271,7 @@ footer .footer__btn-contact.customBtn:hover i {
 }
 #tipsScreen .footer__btn-contact.customBtn:hover,
 #faqsScreen .footer__btn-contact.customBtn:hover {
-  border: 1px solid #022f6e;
+  border: 1px solid #2b2c2c;
 }
 
 @media (max-width: 600px) {
@@ -851,339 +851,12 @@ header {
   transform: translateY(30px) translateX(-30px);
 }
 
-#procedureScreen {
-  background-image: linear-gradient(to bottom, #98eaf6, #65c3d1);
-}
-#procedureScreen #procedureSection {
-  height: auto;
-}
-#procedureScreen #procedureSection .procedure__timeLineContainer {
-  display: flex;
-  flex-direction: column;
-  position: relative;
-}
-#procedureScreen #procedureSection .procedure__timeLineContainer .procedure__stepNumber--card {
-  width: 100px;
-  height: 100px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  position: relative;
-}
-#procedureScreen #procedureSection .procedure__timeLineContainer .procedure__stepNumber--card .procedure__stepNumber {
-  font-size: 3rem;
-  position: absolute;
-}
-#procedureScreen #procedureSection .procedure__timeLineContainer .procedure__lineContainer {
-  width: 100px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-#procedureScreen #procedureSection .procedure__timeLineContainer .procedure__lineContainer .procedure__timeLine {
-  background-color: #022f6e;
-  width: 8px;
-  height: 150px;
-  margin: 25px 0;
-}
-#procedureScreen #procedureSection .procedure__stepDescription {
-  padding: 0 50px;
-}
-#procedureScreen #procedureSection .procedure__stepDescription p {
-  font-size: 1.5rem;
-}
-#procedureScreen #procedureSection .procedure__iconContainer .icon {
-  height: 200px;
-  width: auto;
-  display: inline;
-  margin-left: 50px;
-}
-#procedureScreen .procedure__tipsSectionContent {
-  padding: 30px;
-  margin: 10vh 0;
-  border: none;
-  overflow: hidden;
-}
-#procedureScreen .procedure__tipsSectionContent .card-title {
-  margin-bottom: 20px;
-}
-
-#cvsScreen {
-  background-image: linear-gradient(to bottom, #ffffff, #3c3d4019);
-}
-#cvsScreen #cvsSection {
-  height: auto;
-  margin-top: 20vh;
-}
-#cvsScreen #cvsSection h3 {
-  font-weight: 600;
-  font-size: 3rem;
-}
-#cvsScreen #cvsSection h4 {
-  font-size: 1.5rem;
-  font-weight: 300;
-  margin-bottom: 20px;
-  color: #022f6e;
-}
-#cvsScreen #cvsSection .article__info h3 {
-  font-weight: 600;
-  font-size: 3rem;
-}
-#cvsScreen #cvsSection .article__info .sectionDesc {
-  font-size: 1.5rem;
-  font-weight: 300;
-  margin-bottom: 20px;
-}
-#cvsScreen .hashtagsList .tag:nth-child(1) {
-  margin-left: 0;
-}
-#cvsScreen .cvs__article {
-  height: 100vh;
-  margin: 3rem 15px;
-  padding: 2rem;
-  border-radius: 20px;
-}
-#cvsScreen .cvs__article .article__info {
-  margin-left: 3rem;
-}
-#cvsScreen .cvs__article .article__info h2 {
-  font-weight: 600;
-}
-#cvsScreen .cvs__article .article__info .btn-ver-mas {
-  margin-top: 20px;
-}
-#cvsScreen .cvs__article .article__img {
-  align-items: center;
-  display: flex;
-  justify-content: center;
-}
-
-#faqsSection {
-  height: auto;
-  padding: 10vh 0;
-}
-#faqsSection h3 {
-  font-weight: 600;
-  font-size: 3rem;
-}
-#faqsSection h4 {
-  font-size: 1.5rem;
-  font-weight: 300;
-  margin-bottom: 10vh;
-  color: #ffffff;
-}
-#faqsSection .accordion-item {
-  background-color: transparent;
-  border: none;
-}
-#faqsSection .accordion-button:after {
-  background-image: url("data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16' fill='%23ffffff'><path fill-rule='evenodd' d='M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z'/></svg>") !important;
-}
-#faqsSection .accordion-button,
-#faqsSection .accordion-button:not(.collapsed) {
-  background-color: transparent;
-  box-shadow: none;
-}
-#faqsSection .accordion-button,
-#faqsSection .accordion-body {
-  color: #ffffff;
-}
-#faqsSection .accordion-button {
-  font-weight: 600;
-  font-size: 3rem;
-}
-#faqsSection .faqsSection__titleContainer .accordion-header {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  height: 20vh;
-}
-#faqsSection .faqsSection__titleContainer .faqsSection__titleCircle {
-  width: 60px;
-  height: 60px;
-  border-radius: 50%;
-  background-color: #dafeff;
-  border: 10px solid #8092ff;
-}
-#faqsSection .accordion-body {
-  font-size: 1.8rem;
-  font-weight: 300;
-  border-left: 10px solid #ffffff;
-  margin-left: 23px;
-  padding-left: 50px;
-  padding-bottom: 0;
-}
-#faqsSection .accordion-body .faqsSection__desc {
-  border-bottom: 1px solid #ffffff;
-  padding-bottom: 40px;
-}
-
-#homeScreen #index__homeSection {
-  background-image: linear-gradient(to right, #c6ac00, #fedd02);
-}
-#homeScreen #index__cvsSection {
-  background: url("../../imgs/index-cvs-hero.png") no-repeat 50% 50%;
-  background-size: cover;
-  overflow: hidden;
-  text-align: center;
-}
-#homeScreen #index__cvsSection .sectionDesc {
-  margin-top: 10vh;
-}
-#homeScreen #index__cvsSection .btn-ver-mas {
-  margin-top: 30px;
-  width: 20vw;
-}
-#homeScreen #index__procedureSection {
-  background-image: linear-gradient(to right, #65c3d1, #98eaf6);
-}
-#homeScreen #index__tipsSection {
-  background-image: linear-gradient(to right, #9f9e9e, #767676);
-}
-#homeScreen #index__faqsSection {
-  background-image: linear-gradient(to top, #8092ff, #9ba8f7);
-}
-#homeScreen #homeScreen footer {
-  background-image: linear-gradient(to top, #8092ff, #9ba8f7);
-}
-
-@media (max-width: 600px) {
-  #homeScreen .row {
-    display: flex;
-    position: relative;
-  }
-  #homeScreen .row .contentHero {
-    opacity: 0.3;
-  }
-  #homeScreen .row .contentHero .image3D {
-    width: 100%;
-    height: 50%;
-    padding-left: 0;
-    position: absolute;
-  }
-  #homeScreen .row .contentInfo {
-    height: auto;
-    max-height: auto;
-    position: absolute;
-    z-index: 999;
-  }
-  #homeScreen #index__homeSection h1 {
-    font-size: 3rem !important;
-  }
-  #homeScreen #index__cvsSection {
-    height: 100vh;
-  }
-  #homeScreen #index__cvsSection .cvsSection__cvsInfo .sectionDesc {
-    text-align: left;
-    font-size: 2.3rem;
-    padding: 0 10px;
-  }
-
-  .btn-ver-mas {
-    width: 95% !important;
-    padding: 20px 30px;
-    margin-top: 0 !important;
-  }
-}
-.legalScreen {
-  padding-top: 25vh;
-}
-
-#tipsScreen {
-  background-image: linear-gradient(to bottom, #9f9e9e, #767676);
-}
-#tipsScreen #tipsSection {
-  height: auto;
-}
-#tipsScreen #tipsSection h3 {
-  font-weight: 600;
-  font-size: 3rem;
-}
-#tipsScreen #tipsSection h4 {
-  font-size: 1.5rem;
-  font-weight: 300;
-  margin-bottom: 10vh;
-  color: #ffffff;
-}
-#tipsScreen .articleTitle,
-#tipsScreen .articleDesc {
-  color: #ffffff;
-}
-#tipsScreen .articleTitle {
-  font-size: 2rem;
-}
-#tipsScreen .articleDesc {
-  font-size: 1.5rem;
-  font-weight: 400;
-}
-#tipsScreen .tips__tipCard {
-  min-height: 50vh;
-  display: flex;
-  align-items: center;
-  justify-content: flex-start;
-  padding: 30px;
-  border-radius: 20px;
-  background-color: #9f9e9e;
-  border: none;
-}
-#tipsScreen .tips__tipCard .card-img-top {
-  width: 100%;
-  margin-bottom: 30px;
-}
-#tipsScreen .tips__tipCard .tips__cvImage {
-  padding-right: 30px;
-}
-#tipsScreen .tips__tipCard figure,
-#tipsScreen .tips__tipCard img {
-  width: 300px;
-  margin-top: 10px;
-}
-#tipsScreen #tips__mediumSection {
-  height: auto;
-  padding: 15vh 0;
-}
-#tipsScreen #tips__mediumSection .tips__mediumSection--article {
-  background-color: transparent;
-  border: none;
-  box-shadow: none;
-}
-#tipsScreen #tips__mediumSection .tips__mediumSection--article .tips__mediumSection--imgContainer {
-  overflow: hidden;
-  max-height: 30vh;
-}
-#tipsScreen #tips__mediumSection .tips__mediumSection--article .card-body {
-  padding: 0;
-}
-#tipsScreen #tips__mediumSection .tips__mediumSection--article .card-body .articleTitle {
-  margin: 20px 0;
-}
-#tipsScreen #tips__mediumSection .tips__mediumSection--article .card-body .articleDesc {
-  margin-bottom: 30px;
-  font-weight: 300;
-}
-#tipsScreen #tips__mediumSection .tips__mediumSection--article .btn-medium {
-  display: block;
-  padding-bottom: 15px;
-  border-color: #ffffff;
-}
-#tipsScreen #tips__mediumSection .tips__mediumSection--article .btn-medium:hover {
-  border: 1px solid #022f6e;
-}
-#tipsScreen #tips__mediumSection .tips__mediumSection--article .btn-medium .arrow-btn {
-  transform: translateY(7px);
-}
-#tipsScreen .col-md-8,
-#tipsScreen .col-md-4,
-#tipsScreen .col-md-12 {
-  padding: 0;
-}
-
-#procedureScreen #procedureSection .procedure__timeLineContainer .procedure__stepNumber--card, #procedureScreen .procedure__tipsSectionContent {
+#procedureScreen .procedure__tipsSectionContent, #procedureScreen #procedureSection .procedure__timeLineContainer .procedure__stepNumber--card {
   background-color: #98eaf6;
   border-radius: 20px;
 }
 
-#procedureScreen #procedureSection .procedure__timeLineContainer .procedure__stepNumber--card, #procedureScreen .procedure__tipsSectionContent {
+#procedureScreen .procedure__tipsSectionContent, #procedureScreen #procedureSection .procedure__timeLineContainer .procedure__stepNumber--card {
   background-color: #98eaf6;
   border-radius: 20px;
 }
@@ -1526,5 +1199,409 @@ button:focus,
 
   .goDown {
     display: inline;
+  }
+}
+#procedureScreen {
+  background-image: linear-gradient(to bottom, #98eaf6, #65c3d1);
+}
+#procedureScreen #procedureSection {
+  height: auto;
+}
+#procedureScreen #procedureSection .procedure__timeLineContainer {
+  display: flex;
+  flex-direction: column;
+  position: relative;
+}
+#procedureScreen #procedureSection .procedure__timeLineContainer .procedure__stepNumber--card {
+  width: 100px;
+  height: 100px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+}
+#procedureScreen #procedureSection .procedure__timeLineContainer .procedure__stepNumber--card .procedure__stepNumber {
+  font-size: 3rem;
+  position: absolute;
+}
+#procedureScreen #procedureSection .procedure__timeLineContainer .procedure__lineContainer {
+  width: 100px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+#procedureScreen #procedureSection .procedure__timeLineContainer .procedure__lineContainer .procedure__timeLine {
+  background-color: #022f6e;
+  width: 8px;
+  height: 150px;
+  margin: 25px 0;
+}
+#procedureScreen #procedureSection .procedure__stepDescription {
+  padding: 0 50px;
+}
+#procedureScreen #procedureSection .procedure__stepDescription p {
+  font-size: 1.5rem;
+}
+#procedureScreen #procedureSection .procedure__iconContainer .icon {
+  height: 200px;
+  width: auto;
+  display: inline;
+  margin-left: 50px;
+}
+#procedureScreen .procedure__tipsSectionContent {
+  padding: 30px;
+  margin: 10vh 0;
+  border: none;
+  overflow: hidden;
+}
+#procedureScreen .procedure__tipsSectionContent .card-title {
+  margin-bottom: 20px;
+}
+
+@media (max-width: 600px) {
+  #procedureScreen h3 {
+    font-size: 2.5rem !important;
+  }
+  #procedureScreen h4 {
+    font-size: 5rem;
+    font-weight: 300;
+    margin-bottom: 20px;
+    color: #022f6e;
+  }
+  #procedureScreen #procedureSection .procedure__timeLineContainer {
+    width: 60px;
+  }
+  #procedureScreen #procedureSection .procedure__timeLineContainer .procedure__stepNumber--card {
+    width: 60px;
+    height: 60px;
+  }
+  #procedureScreen #procedureSection .procedure__timeLineContainer .procedure__stepNumber--card .procedure__stepNumber {
+    font-size: 2.5rem;
+  }
+  #procedureScreen #procedureSection .procedure__timeLineContainer .procedure__lineContainer {
+    align-items: flex-start;
+    justify-content: flex-start;
+    margin-left: 25px;
+  }
+  #procedureScreen #procedureSection .procedure__timeLineContainer .procedure__lineContainer .procedure__timeLine {
+    background-color: #022f6e;
+    height: 50vh;
+    opacity: 0.8;
+  }
+  #procedureScreen #procedureSection .procedure__stepDescription {
+    padding: 0;
+  }
+  #procedureScreen #procedureSection .procedure__stepDescription p {
+    font-size: 1.5rem;
+  }
+  #procedureScreen #procedureSection .procedure__iconContainer .icon {
+    margin: 30px;
+  }
+  #procedureScreen .procedure__tipsSectionContent {
+    padding: 20px;
+  }
+}
+#faqsSection {
+  height: auto;
+  padding: 10vh 0;
+}
+#faqsSection h3 {
+  font-weight: 600;
+  font-size: 3rem;
+}
+#faqsSection h4 {
+  font-size: 1.5rem;
+  font-weight: 300;
+  margin-bottom: 10vh;
+  color: #ffffff;
+}
+#faqsSection .accordion-item {
+  background-color: transparent;
+  border: none;
+}
+#faqsSection .accordion-button:after {
+  background-image: url("data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16' fill='%23ffffff'><path fill-rule='evenodd' d='M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z'/></svg>") !important;
+}
+#faqsSection .accordion-button,
+#faqsSection .accordion-button:not(.collapsed) {
+  background-color: transparent;
+  box-shadow: none;
+}
+#faqsSection .accordion-button,
+#faqsSection .accordion-body {
+  color: #ffffff;
+}
+#faqsSection .accordion-button {
+  font-weight: 600;
+  font-size: 3rem;
+}
+#faqsSection .faqsSection__titleContainer .accordion-header {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 20vh;
+}
+#faqsSection .faqsSection__titleContainer .faqsSection__titleCircle {
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  background-color: #dafeff;
+  border: 10px solid #8092ff;
+}
+#faqsSection .accordion-body {
+  font-size: 1.8rem;
+  font-weight: 300;
+  border-left: 10px solid #ffffff;
+  margin-left: 23px;
+  padding-left: 50px;
+  padding-bottom: 0;
+}
+#faqsSection .accordion-body .faqsSection__desc {
+  border-bottom: 1px solid #ffffff;
+  padding-bottom: 40px;
+}
+
+#homeScreen #index__homeSection {
+  background-image: linear-gradient(to right, #c6ac00, #fedd02);
+}
+#homeScreen #index__cvsSection {
+  background: url("../../imgs/index-cvs-hero.png") no-repeat 50% 50%;
+  background-size: cover;
+  overflow: hidden;
+  text-align: center;
+}
+#homeScreen #index__cvsSection .sectionDesc {
+  margin-top: 10vh;
+}
+#homeScreen #index__cvsSection .btn-ver-mas {
+  margin-top: 30px;
+  width: 20vw;
+}
+#homeScreen #index__procedureSection {
+  background-image: linear-gradient(to right, #65c3d1, #98eaf6);
+}
+#homeScreen #index__tipsSection {
+  background-image: linear-gradient(to right, #9f9e9e, #767676);
+}
+#homeScreen #index__faqsSection {
+  background-image: linear-gradient(to top, #8092ff, #9ba8f7);
+}
+#homeScreen #homeScreen footer {
+  background-image: linear-gradient(to top, #8092ff, #9ba8f7);
+}
+
+@media (max-width: 600px) {
+  #homeScreen .row {
+    display: flex;
+    position: relative;
+  }
+  #homeScreen .row .contentHero {
+    opacity: 0.3;
+  }
+  #homeScreen .row .contentHero .image3D {
+    width: 100%;
+    height: 50%;
+    padding-left: 0;
+    position: absolute;
+  }
+  #homeScreen .row .contentInfo {
+    height: auto;
+    max-height: auto;
+    position: absolute;
+    z-index: 999;
+  }
+  #homeScreen #index__homeSection h1 {
+    font-size: 3rem !important;
+  }
+  #homeScreen #index__cvsSection {
+    height: 100vh;
+  }
+  #homeScreen #index__cvsSection .cvsSection__cvsInfo .sectionDesc {
+    text-align: left;
+    font-size: 2.3rem;
+    padding: 0 10px;
+  }
+
+  .btn-ver-mas {
+    width: 95% !important;
+    padding: 20px 30px;
+    margin-top: 0 !important;
+  }
+}
+.legalScreen {
+  padding-top: 25vh;
+}
+
+#tipsScreen {
+  background-image: linear-gradient(to bottom, #9f9e9e, #767676);
+}
+#tipsScreen #tipsSection {
+  height: auto;
+}
+#tipsScreen #tipsSection h3 {
+  font-weight: 600;
+  font-size: 3rem;
+}
+#tipsScreen #tipsSection h4 {
+  font-size: 1.5rem;
+  font-weight: 300;
+  margin-bottom: 10vh;
+  color: #ffffff;
+}
+#tipsScreen .articleTitle,
+#tipsScreen .articleDesc {
+  color: #ffffff;
+}
+#tipsScreen .articleTitle {
+  font-size: 2rem;
+}
+#tipsScreen .articleDesc {
+  font-size: 1.5rem;
+  font-weight: 400;
+}
+#tipsScreen .tips__tipCard {
+  min-height: 50vh;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  padding: 30px;
+  border-radius: 20px;
+  background-color: #9f9e9e;
+  border: none;
+}
+#tipsScreen .tips__tipCard .card-img-top {
+  width: 100%;
+  margin-bottom: 30px;
+}
+#tipsScreen .tips__tipCard .tips__cvImage {
+  padding-right: 30px;
+}
+#tipsScreen .tips__tipCard figure,
+#tipsScreen .tips__tipCard img {
+  width: 300px;
+  margin-top: 10px;
+}
+#tipsScreen #tips__mediumSection {
+  height: auto;
+  padding: 15vh 0;
+}
+#tipsScreen #tips__mediumSection .tips__mediumSection--article {
+  background-color: transparent;
+  border: none;
+  box-shadow: none;
+}
+#tipsScreen #tips__mediumSection .tips__mediumSection--article .tips__mediumSection--imgContainer {
+  overflow: hidden;
+  max-height: 30vh;
+}
+#tipsScreen #tips__mediumSection .tips__mediumSection--article .card-body {
+  padding: 0;
+}
+#tipsScreen #tips__mediumSection .tips__mediumSection--article .card-body .articleTitle {
+  margin: 20px 0;
+}
+#tipsScreen #tips__mediumSection .tips__mediumSection--article .card-body .articleDesc {
+  margin-bottom: 30px;
+  font-weight: 300;
+}
+#tipsScreen #tips__mediumSection .tips__mediumSection--article .btn-medium {
+  display: block;
+  padding-bottom: 15px;
+  border-color: #ffffff;
+}
+#tipsScreen #tips__mediumSection .tips__mediumSection--article .btn-medium:hover {
+  border: 1px solid #2b2c2c;
+}
+#tipsScreen #tips__mediumSection .tips__mediumSection--article .btn-medium .arrow-btn {
+  transform: translateY(7px);
+}
+#tipsScreen .col-md-8,
+#tipsScreen .col-md-4,
+#tipsScreen .col-md-12 {
+  padding: 0;
+}
+
+#cvsScreen {
+  background-image: linear-gradient(to bottom, #ffffff, #3c3d4019);
+}
+#cvsScreen #cvsSection {
+  height: auto;
+  margin-top: 20vh;
+}
+#cvsScreen #cvsSection h3 {
+  font-weight: 600;
+  font-size: 3rem;
+}
+#cvsScreen #cvsSection h4 {
+  font-size: 1.5rem;
+  font-weight: 300;
+  margin-bottom: 20px;
+  color: #022f6e;
+}
+#cvsScreen .hashtagsList .tag:nth-child(1) {
+  margin-left: 0;
+}
+#cvsScreen .cvs__article--standard .imgCv {
+  width: 55%;
+}
+#cvsScreen .cvs__article--it .imgCv {
+  width: 65%;
+}
+#cvsScreen .cvs__article--adm .imgCv {
+  width: 60%;
+}
+#cvsScreen .cvs__article {
+  height: 100vh;
+  margin: 3rem 0;
+  border-radius: 20px;
+  overflow: hidden;
+}
+#cvsScreen .cvs__article .card-body {
+  padding: 0 50px;
+}
+#cvsScreen .cvs__article .article__info h2 {
+  font-weight: 600;
+}
+#cvsScreen .cvs__article .article__info .btn-ver-mas {
+  margin-top: 20px;
+}
+#cvsScreen .cvs__article .article__img {
+  align-items: center;
+  display: flex;
+  justify-content: center;
+}
+
+@media (max-width: 600px) {
+  #cvsSection {
+    margin-top: 0 !important;
+  }
+  #cvsSection h3 {
+    font-size: 2.5rem !important;
+  }
+  #cvsSection h4 {
+    font-size: 5rem;
+    font-weight: 300;
+    margin-bottom: 20px;
+    color: #022f6e;
+  }
+  #cvsSection .cvs__article {
+    height: auto;
+    margin-bottom: 20px;
+  }
+  #cvsSection .cvs__article .card-body {
+    padding: 0 30px;
+  }
+  #cvsSection .cvs__article .alignMiddleY {
+    height: auto;
+  }
+  #cvsSection .cvs__article .imgCv {
+    width: 90%;
+    margin: 30px 0;
+  }
+  #cvsSection .cvs__article--it .row {
+    display: flex;
+  }
+  #cvsSection .cvs__article--it .row .article__info-container {
+    order: 2;
   }
 }/*# sourceMappingURL=main.css.map */
