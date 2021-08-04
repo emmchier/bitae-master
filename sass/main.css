@@ -1521,6 +1521,48 @@ button:focus,
   padding: 0;
 }
 
+@media (max-width: 600px) {
+  #tipsScreen #tipsSection {
+    margin-top: 0 !important;
+  }
+  #tipsScreen #tipsSection .tips__tipCard {
+    min-height: auto;
+    height: auto;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    padding: 20px;
+    border-radius: 20px;
+    background-color: #9f9e9e;
+    border: none;
+    margin-left: 0 !important;
+  }
+  #tipsScreen #tipsSection .tips__tipCard .tips__cvImage {
+    padding-right: 0;
+  }
+  #tipsScreen #tipsSection .tips__tipCard .articleDesc {
+    margin-bottom: 20px;
+  }
+  #tipsScreen h3 {
+    font-size: 2.5rem !important;
+  }
+  #tipsScreen h4 {
+    font-size: 1.5rem;
+    font-weight: 300;
+    margin-bottom: 10vh;
+    color: #ffffff;
+  }
+  #tipsScreen .marginTop4 {
+    margin-top: 20px;
+  }
+  #tipsScreen #tips__mediumSection {
+    padding: 8vh 0;
+  }
+  #tipsScreen #tips__mediumSection .tips__mediumSection--article {
+    margin-right: 0 !important;
+    margin-bottom: 10vh;
+  }
+}
 #cvsScreen {
   background-image: linear-gradient(to bottom, #ffffff, #3c3d4019);
 }

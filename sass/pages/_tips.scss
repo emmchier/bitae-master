@@ -106,3 +106,64 @@
     padding: 0;
   }
 }
+
+@media #{$note} {
+}
+
+@media #{$tablet} {
+}
+
+@media #{$mobileSm} {
+}
+
+@media #{$mobile} {
+  #tipsScreen {
+    #tipsSection {
+      margin-top: 0 !important;
+
+      .tips__tipCard {
+        min-height: auto;
+        height: auto;
+        display: flex;
+        align-items: center;
+        justify-content: flex-start;
+        padding: 20px;
+        border-radius: 20px;
+        background-color: $tips-light;
+        border: none;
+        margin-left: 0 !important;
+
+        .tips__cvImage {
+          padding-right: 0;
+        }
+
+        .articleDesc {
+          margin-bottom: 20px;
+        }
+      }
+    }
+    h3 {
+      font-size: 2.5rem !important;
+    }
+
+    h4 {
+      font-size: 1.5rem;
+      font-weight: 300;
+      margin-bottom: 10vh;
+      color: $whiteColor;
+    }
+
+    .marginTop4 {
+      margin-top: 20px;
+    }
+
+    #tips__mediumSection {
+      padding: 8vh 0;
+
+      .tips__mediumSection--article {
+        margin-right: 0 !important;
+        margin-bottom: 10vh;
+      }
+    }
+  }
+}
