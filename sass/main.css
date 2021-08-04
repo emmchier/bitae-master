@@ -1361,6 +1361,40 @@ button:focus,
   padding-bottom: 40px;
 }
 
+@media (max-width: 600px) {
+  #faqsScreen #faqsSection {
+    padding-top: 0;
+  }
+  #faqsScreen h3 {
+    font-size: 2.5rem !important;
+  }
+  #faqsScreen h4 {
+    font-size: 1.5rem;
+    font-weight: 300;
+    margin-bottom: 10vh;
+    color: #ffffff;
+  }
+  #faqsScreen .faqsSection__titleContainer .accordion-header {
+    height: 15vh;
+    margin-bottom: 0;
+  }
+  #faqsScreen .faqsSection__titleContainer .accordion-header .accordion-button {
+    font-size: 2rem;
+  }
+  #faqsScreen .faqsSection__titleContainer .faqsSection__titleCircle {
+    width: 50px;
+    height: 50px;
+  }
+  #faqsScreen .accordion-body {
+    font-size: 1.5rem;
+    margin-left: 18px;
+    padding-left: 25px;
+  }
+  #faqsScreen .accordion-body .faqsSection__desc {
+    border-bottom: 1px solid #ffffff;
+    padding-bottom: 40px;
+  }
+}
 #homeScreen #index__homeSection {
   background-image: linear-gradient(to right, #c6ac00, #fedd02);
 }
