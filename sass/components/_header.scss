@@ -42,3 +42,57 @@ header {
     }
   }
 }
+
+@media #{$note} {
+}
+
+@media #{$tablet} {
+}
+
+@media #{$mobileSm} {
+}
+
+@media #{$mobile} {
+  .sectionHeader,
+  .sectionHeader .alignMiddleY {
+    height: 50vh;
+    min-height: 50vh;
+  }
+
+  .sectionHeader {
+    margin-top: 80px;
+    border-radius: 20px;
+    padding: 0;
+    overflow: hidden;
+
+    .headerContent {
+      h3 {
+        margin: 10px 0;
+        font-size: $header2;
+        font-weight: 800;
+      }
+    }
+
+    .row {
+      display: flex;
+      position: relative;
+
+      .contentHero {
+        opacity: 0.3;
+
+        .image3D {
+          width: 150%;
+          height: 120%;
+          position: absolute;
+        }
+      }
+
+      .contentInfo {
+        height: auto;
+        max-height: auto;
+        position: absolute;
+        z-index: 999;
+      }
+    }
+  }
+}
