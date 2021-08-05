@@ -33,6 +33,30 @@
     }
   }
 
+  #index__procedureSection {
+    .image3D {
+      width: 100%;
+      height: 60%;
+      transform: translateX(-100px);
+    }
+  }
+
+  #index__tipsSection {
+    .image3D {
+      width: 100%;
+      height: 70%;
+      transform: translateX(-70px) translateY(40px);
+    }
+  }
+
+  #index__faqsSection {
+    .image3D {
+      width: 100%;
+      height: 85%;
+      transform: translateX(-10px) translateY(40px);
+    }
+  }
+
   #homeScreen footer {
     @include gradientBackground(top, $preguntas-dark, $preguntas-light);
   }

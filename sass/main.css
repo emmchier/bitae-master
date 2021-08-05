@@ -116,7 +116,7 @@
 .customBtn__text {
   background-color: transparent;
   border: none;
-  color: #022f6e;
+  color: #2b2c2c;
   text-decoration: none;
 }
 .customBtn__text:hover {
@@ -205,7 +205,7 @@
 
   .customBtn__text:hover {
     background-color: transparent;
-    color: #022f6e;
+    color: #2b2c2c;
     text-decoration: none;
   }
 }
@@ -216,7 +216,7 @@ footer {
 footer p,
 footer a,
 footer h1 {
-  color: #022f6e;
+  color: #2b2c2c;
 }
 footer .footer__contact-container {
   display: flex;
@@ -745,7 +745,7 @@ header {
   width: 26px;
   height: 3px;
   border-radius: 10px;
-  background-color: #022f6e;
+  background-color: #2b2c2c;
   margin-bottom: 5px;
 }
 
@@ -927,7 +927,7 @@ h3,
 p,
 a,
 i {
-  color: #022f6e;
+  color: #2b2c2c;
 }
 
 #tipsScreen h1,
@@ -1111,7 +1111,7 @@ ul {
   right: 0;
   margin: 20px 30px;
   padding: 10px;
-  color: #022f6e;
+  color: #2b2c2c;
   border-radius: 50%;
   display: none;
 }
@@ -1177,9 +1177,10 @@ button:focus,
 }
 
 .image3D {
-  width: 30%;
-  height: 60%;
+  width: 100%;
+  height: 70%;
   position: absolute;
+  transform: translateY(30px);
 }
 
 @media (min-width: 576px) {
@@ -1231,7 +1232,7 @@ button:focus,
   justify-content: center;
 }
 #procedureScreen #procedureSection .procedure__timeLineContainer .procedure__lineContainer .procedure__timeLine {
-  background-color: #022f6e;
+  background-color: #2b2c2c;
   width: 8px;
   height: 150px;
   margin: 25px 0;
@@ -1266,7 +1267,7 @@ button:focus,
     font-size: 5rem;
     font-weight: 300;
     margin-bottom: 20px;
-    color: #022f6e;
+    color: #2b2c2c;
   }
   #procedureScreen #procedureSection .procedure__timeLineContainer {
     width: 60px;
@@ -1284,7 +1285,7 @@ button:focus,
     margin-left: 25px;
   }
   #procedureScreen #procedureSection .procedure__timeLineContainer .procedure__lineContainer .procedure__timeLine {
-    background-color: #022f6e;
+    background-color: #2b2c2c;
     height: 50vh;
     opacity: 0.8;
   }
@@ -1419,6 +1420,21 @@ button:focus,
 }
 #homeScreen #index__faqsSection {
   background-image: linear-gradient(to top, #8092ff, #9ba8f7);
+}
+#homeScreen #index__procedureSection .image3D {
+  width: 100%;
+  height: 60%;
+  transform: translateX(-100px);
+}
+#homeScreen #index__tipsSection .image3D {
+  width: 100%;
+  height: 70%;
+  transform: translateX(-70px) translateY(40px);
+}
+#homeScreen #index__faqsSection .image3D {
+  width: 100%;
+  height: 85%;
+  transform: translateX(-10px) translateY(40px);
 }
 #homeScreen #homeScreen footer {
   background-image: linear-gradient(to top, #8092ff, #9ba8f7);
@@ -1612,7 +1628,7 @@ button:focus,
   font-size: 1.5rem;
   font-weight: 300;
   margin-bottom: 20px;
-  color: #022f6e;
+  color: #2b2c2c;
 }
 #cvsScreen .hashtagsList .tag:nth-child(1) {
   margin-left: 0;
@@ -1658,7 +1674,7 @@ button:focus,
     font-size: 5rem;
     font-weight: 300;
     margin-bottom: 20px;
-    color: #022f6e;
+    color: #2b2c2c;
   }
   #cvsSection .cvs__article {
     height: auto;
