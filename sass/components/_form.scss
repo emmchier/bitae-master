@@ -8,6 +8,8 @@ form {
     display: block;
     border-radius: 0;
     margin-bottom: 15px;
+    color: $whiteColor;
+    padding-right: 0;
   }
 }
 
@@ -27,42 +29,32 @@ label {
 .form-control.active,
 .form-control:focus {
   background-color: transparent !important;
-  border: none;
+  border-bottom: 1px solid $ask_circle;
+  color: $whiteColor;
 }
 
 .btn-submit {
+  width: 25%;
   margin-top: 8px;
-  border: 2px solid #52cec2;
-  font-size: 14px;
-  color: #52cec2;
+  border: 1px solid $ask_circle;
+  font-size: 15px;
+  color: $ask_circle;
 }
 .btn-submit.disabledState {
-  border: 2px solid #c4c1c1 !important;
-  color: #c4c1c1 !important;
+  opacity: 0.5;
+  color: $whiteColor;
 }
 
-.btn-submit.hoverState:hover,
-.btn-submit.hoverState:active,
-.btn-submit.hoverState:focus {
-  background-color: #52cec2 !important;
-  border-color: #52cec2 !important;
-  color: #ffffff;
+@media #{$note} {
 }
 
-/* desk pc escritorio de 20 */
-@media only screen and (min-width: 1500px) {
+@media #{$tablet} {
 }
-/* desk notebook*/
-@media only screen and (min-width: 1200px) and (max-width: 1499px) {
+
+@media #{$mobileSm} {
 }
-/* desk notebooks más chicas (marhis) */
-@media only screen and (min-width: 993px) and (max-width: 1199px) {
-}
-/* tablet o iPad */
-@media only screen and (min-width: 601px) and (max-width: 992px) {
-}
-/* mobile */
-@media only screen and (max-width: 600px) {
+
+@media #{$mobile} {
   form {
     padding-bottom: 0 !important;
   }
@@ -96,7 +88,6 @@ label {
 #loaders img {
   width: 150px;
   margin: 0 auto;
-  /* display: none; */
 }
 
 #spinner {
@@ -104,7 +95,7 @@ label {
 }
 
 .spinner-grow {
-  background-color: #52cec2 !important;
+  background-color: $secondaryLightColor !important;
 }
 
 .send-overlay {

@@ -1,4 +1,3 @@
-@charset "UTF-8";
 #procedureScreen .procedure__tipsSectionContent, #procedureScreen #procedureSection .procedure__timeLineContainer .procedure__stepNumber--card {
   background-color: #98eaf6;
   border-radius: 20px;
@@ -336,6 +335,8 @@ form .form-control {
   display: block;
   border-radius: 0;
   margin-bottom: 15px;
+  color: #ffffff;
+  padding-right: 0;
 }
 
 .ocult {
@@ -354,35 +355,24 @@ label {
 .form-control.active,
 .form-control:focus {
   background-color: transparent !important;
-  border: none;
-}
-
-.btn-submit {
-  margin-top: 8px;
-  border: 2px solid #52cec2;
-  font-size: 14px;
-  color: #52cec2;
-}
-
-.btn-submit.disabledState {
-  border: 2px solid #c4c1c1 !important;
-  color: #c4c1c1 !important;
-}
-
-.btn-submit.hoverState:hover,
-.btn-submit.hoverState:active,
-.btn-submit.hoverState:focus {
-  background-color: #52cec2 !important;
-  border-color: #52cec2 !important;
+  border-bottom: 1px solid #dafeff;
   color: #ffffff;
 }
 
-/* desk pc escritorio de 20 */
-/* desk notebook*/
-/* desk notebooks más chicas (marhis) */
-/* tablet o iPad */
-/* mobile */
-@media only screen and (max-width: 600px) {
+.btn-submit {
+  width: 25%;
+  margin-top: 8px;
+  border: 1px solid #dafeff;
+  font-size: 15px;
+  color: #dafeff;
+}
+
+.btn-submit.disabledState {
+  opacity: 0.5;
+  color: #ffffff;
+}
+
+@media (max-width: 600px) {
   form {
     padding-bottom: 0 !important;
   }
@@ -418,7 +408,6 @@ label {
 #loaders img {
   width: 150px;
   margin: 0 auto;
-  /* display: none; */
 }
 
 #spinner {
@@ -426,7 +415,7 @@ label {
 }
 
 .spinner-grow {
-  background-color: #52cec2 !important;
+  background-color: #42579d !important;
 }
 
 .send-overlay {
@@ -1654,6 +1643,7 @@ button:focus,
   margin: 3rem 0;
   border-radius: 20px;
   overflow: hidden;
+  background-color: transparent;
 }
 #cvsScreen .cvs__article .card-body {
   padding: 0 50px;
