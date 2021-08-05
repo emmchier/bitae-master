@@ -6,7 +6,6 @@ function setForm() {
   $(document).ready(function () {
     $(".contact-form").bind("submit", function (e) {
       e.preventDefault();
-
       $.ajax({
         type: $(this).attr("method"),
         url: $(this).attr("action"),
@@ -15,23 +14,19 @@ function setForm() {
           enviarEmail();
         },
         error: function () {
-          //    showErrorToast('No se pudo enviar el mensaje. Compruebe los campos y su conexión a internet e intente de nuevo.');
+          console.log("Error al enviar formulario");
         },
       });
     });
   });
 
-  // init form fileds
   const nombre = document.querySelector("#nombre");
   const email = document.querySelector("#email");
   const asunto = document.querySelector("#asunto");
   const mensaje = document.querySelector("#mensaje");
   const btnEnviar = document.querySelector("#submit");
-
-  // init views
   const formularioEnviar = document.querySelector(".contact-form");
   const sendedContainer = document.querySelector(".sended-container");
-  const sendedMessage = document.querySelector(".sended-message");
   const loading = document.querySelector(".send-overlay");
 
   eventListeners();
@@ -39,14 +34,10 @@ function setForm() {
   function eventListeners() {
     setDisabled(true);
     onEnableState();
-
-    // Campos del formulario
     nombre.addEventListener("blur", validarCampo);
     email.addEventListener("blur", validarCampo);
     asunto.addEventListener("blur", validarCampo);
     mensaje.addEventListener("blur", validarCampo);
-
-    // Boton de enviar en el submit
     formularioEnviar.addEventListener("submit", enviarEmail);
   }
 
@@ -68,12 +59,8 @@ function setForm() {
     elem.classList.add(addThis);
   }
 
-  // Valida que el campo tengo algo escrito
-
   function validarCampo() {
-    // Se valida la longitud del texto y que no este vacio
     validarLongitud(this);
-
     switch (this.type) {
       case "nombre":
         validarCampo();
@@ -111,7 +98,7 @@ function setForm() {
       }, 5000);
     }, 3000);
   }
-  // // Verifica la longitud del texto en los campos
+
   function validarLongitud(campo) {
     if (campo.value.length > 0) {
       showError(false, ".errorMensaje");
@@ -148,86 +135,13 @@ function setForm() {
     }
   }
 
-  function formSuccess() {
-    $("#contactForm")[0].reset();
-    submitMSG(true, "Message Submitted!");
-  }
-
-  function formError() {
-    $("#contactForm")
-      .removeClass()
-      .addClass("shake animated")
-      .one(
-        "webkitAnimationEnd mozAnimationEnd MSAnimationEnd oanimationend animationend",
-        function () {
-          $(this).removeClass();
-        }
-      );
-  }
-
-  function submitMSG(valid, msg) {
-    if (valid) {
-      var msgClasses = "h3 text-center tada animated text-success";
-    } else {
-      var msgClasses = "h3 text-center text-danger";
-    }
-    $("#msgSubmit").removeClass().addClass(msgClasses).text(msg);
-  }
-
   function onEnableState() {
     btnEnviar.addEventListener("click", () => {
-      //if(btnEnviar.disabled == false) {
       setTimeout(function () {
         const dontClick = `<p>Debes llenar los campos anteriores</p>`;
         const dontClickMessage = document.querySelector(".help-submit");
         dontClickMessage.innerHTML = dontClick;
       }, 4000);
-      //}
     });
   }
 }
-
-//   function sendedMessage() {
-//     // se oculta formulario
-//     // poner clase para ocultarlo
-//     formularioEnviar.classList.add("hide");
-//     setTimeout(function () {
-//       // aparece mensaje
-//       sendedContainer.classList.remove("ocult");
-//       // setTimeout(function () {
-//       //   $(".en-breve").addClass("backOnHex-x");
-//       // }, 200);
-//       setTimeout(function () {
-//         sendedContainer.classList.add("ocult");
-//       }, 4000);
-//       formularioEnviar.classList.add("hide");
-//     }, 1000);
-//   }
-
-//   // // Verifica la longitud del texto en los campos
-//   function validarLongitud(campo) {
-//     if (campo.value.length > 0) {
-//       showError(false, ".errorMensaje");
-//     } else {
-//       showError(true, ".errorMensaje");
-//     }
-//   }
-
-//   function validarEmail(campo) {
-//     const mensaje = campo.value;
-//     if (mensaje.indexOf("@") !== -1) {
-//       showError(false, ".errorEmail");
-//     } else {
-//       showError(true, ".errorEmail");
-//     }
-//   }
-
-//   function showError(isShowing, type) {
-//     var typeError = document.querySelector(type);
-//     if (isShowing) {
-//       $(typeError).addClass("errorShow");
-//     } else {
-//       $(typeError).removeClass("errorShow");
-//     }
-//   }
-// }
