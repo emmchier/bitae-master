@@ -326,13 +326,16 @@ footer .footer__copyright-container .copyright {
     display: block;
   }
 }
-.form-control {
-  background-color: #d6f6f3;
+form {
+  margin-right: 10vh;
+}
+form .form-control {
+  background-color: transparent;
   border: none;
-  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.043);
-  border-radius: 8px;
-  opacity: 1;
+  border-bottom: 1px solid #dafeff;
   display: block;
+  border-radius: 0;
+  margin-bottom: 15px;
 }
 
 .ocult {
@@ -340,22 +343,18 @@ footer .footer__copyright-container .copyright {
   opacity: 0;
 }
 
-form {
-  padding-bottom: 30px;
-}
-
 label {
   margin-bottom: 0.2rem;
-  padding-left: 0.4rem;
+  padding-left: 0;
   font-weight: 300;
-  color: #565353;
-  font-size: 15px;
+  color: #dafeff;
+  font-size: 1rem;
 }
 
 .form-control.active,
 .form-control:focus {
-  background-color: #d6f6f3 !important;
-  border: 1px solid #565353;
+  background-color: transparent !important;
+  border: none;
 }
 
 .btn-submit {
