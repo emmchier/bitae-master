@@ -1176,6 +1176,27 @@ button:focus,
     display: inline;
   }
 }
+#errorScreen .customBtn {
+  color: #767676;
+}
+#errorScreen .customBtn i {
+  width: 30px;
+  color: #767676;
+}
+#errorScreen .customBtn:hover {
+  color: #ffffff;
+  text-decoration: none;
+}
+#errorScreen #error__errorSection {
+  background-color: #202020;
+}
+#errorScreen #error__errorSection img {
+  width: 80%;
+}
+#errorScreen #error__errorSection footer {
+  background-color: #202020;
+}
+
 #procedureScreen {
   background-image: linear-gradient(to bottom, #98eaf6, #65c3d1);
 }

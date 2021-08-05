@@ -1,0 +1,25 @@
+#errorScreen {
+  .customBtn {
+    color: $tips-dark;
+    i {
+      width: 30px;
+      color: $tips-dark;
+    }
+
+    &:hover {
+      color: $whiteColor;
+      text-decoration: none;
+    }
+  }
+
+  #error__errorSection {
+    background-color: $error_bg;
+
+    img {
+      width: 80%;
+    }
+    footer {
+      background-color: $error_bg;
+    }
+  }
+}
