@@ -45,8 +45,11 @@
     }
 
     .procedure__iconContainer {
+      display: flex;
+      align-items: center;
+      justify-content: center;
       .icon {
-        height: 200px;
+        height: 150px;
         width: auto;
         display: inline;
         margin-left: 50px;
@@ -63,6 +66,14 @@
 
     .card-title {
       margin-bottom: 20px;
+    }
+
+    .image3D {
+      height: 55vh;
+      width: auto;
+      opacity: 0.3;
+      position: absolute;
+      transform: translateY(-70px) rotate(-20deg);
     }
   }
 }

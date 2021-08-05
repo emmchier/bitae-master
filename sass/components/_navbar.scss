@@ -22,10 +22,10 @@
     overflow: hidden;
     margin-right: 10px;
     cursor: pointer;
+    color: $blackColor;
     @include getTransition;
 
     &:hover {
-      color: $blackColor;
       background-color: $translucent;
     }
   }

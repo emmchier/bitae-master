@@ -11,16 +11,53 @@ header {
 }
 
 .sectionHeader {
-  margin-top: 130px;
+  margin-top: 20vh;
   border-radius: 40px;
   padding: 0 50px;
   margin-bottom: 10vh;
+  overflow: hidden;
 
   .headerContent {
     h3 {
       margin: 10px 0;
       font-size: $header1;
       font-weight: 800;
+    }
+  }
+
+  .image3D {
+    width: 100%;
+    height: 70%;
+    position: relative;
+    transform: translateY(30px);
+  }
+}
+
+#procedureScreen {
+  .sectionHeader {
+    .image3D {
+      transform: translateY(-4px);
+    }
+  }
+}
+
+#tipsScreen {
+  .sectionHeader {
+    .image3D {
+      width: 100%;
+      height: 80%;
+    }
+  }
+}
+
+#faqsScreen {
+  .sectionHeader {
+    overflow: hidden;
+    .image3D {
+      width: 100%;
+      height: 95%;
+      transform: translateX(-200px) translateY(100px);
+      position: absolute;
     }
   }
 }
