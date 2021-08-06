@@ -18,17 +18,26 @@ header {
   overflow: hidden;
 
   .headerContent {
+    position: absolute;
     h3 {
       margin: 10px 0;
       font-size: $header1;
       font-weight: 800;
+    }
+
+    .hashtagsList {
+      position: relative;
+
+      li {
+        display: inline-block;
+      }
     }
   }
 
   .image3D {
     width: 100%;
     height: 70%;
-    position: relative;
+    position: absolute;
     transform: translateY(30px);
   }
 }
@@ -103,15 +112,17 @@ header {
     overflow: hidden;
 
     .headerContent {
+
       h3 {
         margin: 10px 0;
         font-size: $header2;
         font-weight: 800;
+        position: relative;
       }
+     
     }
 
     .row {
-      display: flex;
       position: relative;
 
       .contentHero {
@@ -120,15 +131,32 @@ header {
         .image3D {
           width: 150%;
           height: 120%;
-          position: absolute;
         }
       }
 
       .contentInfo {
         height: auto;
         max-height: auto;
-        position: absolute;
         z-index: 999;
+      }
+    }
+  }
+
+  #cvsScreen {
+    .sectionHeader {
+      .image3D {
+        width: 130%; 
+        transform: translateY(10px) translateX(-110px);
+      }
+    }
+  }
+
+  #faqsScreen {
+    .sectionHeader {
+      .image3D {
+        width: 300%; 
+        height: 300%;
+        transform: translateY(100px) translateX(10px);
       }
     }
   }
