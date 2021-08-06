@@ -16,9 +16,11 @@ header {
   padding: 0 50px;
   margin-bottom: 10vh;
   overflow: hidden;
+  position: relative;
 
   .headerContent {
     position: absolute;
+    z-index: 999;
     h3 {
       margin: 10px 0;
       font-size: $header1;
@@ -33,12 +35,13 @@ header {
       }
     }
   }
+}
 
-  .image3D {
-    width: 100%;
-    height: 70%;
-    position: absolute;
-    transform: translateY(30px);
+#cvsScreen {
+  .sectionHeader {
+    .image3D {
+      transform: translateX(-4px);
+    }
   }
 }
 
@@ -89,6 +92,9 @@ header {
   }
 }
 
+@media #{desk} {
+}
+
 @media #{$note} {
 }
 
@@ -112,14 +118,12 @@ header {
     overflow: hidden;
 
     .headerContent {
-
       h3 {
         margin: 10px 0;
         font-size: $header2;
         font-weight: 800;
         position: relative;
       }
-     
     }
 
     .row {
@@ -145,7 +149,7 @@ header {
   #cvsScreen {
     .sectionHeader {
       .image3D {
-        width: 130%; 
+        width: 130%;
         transform: translateY(10px) translateX(-110px);
       }
     }
@@ -154,7 +158,7 @@ header {
   #faqsScreen {
     .sectionHeader {
       .image3D {
-        width: 300%; 
+        width: 300%;
         height: 300%;
         transform: translateY(100px) translateX(10px);
       }

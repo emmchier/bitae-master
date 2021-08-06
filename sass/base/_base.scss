@@ -287,13 +287,6 @@ button:focus,
   overflow-y: inherit;
 }
 
-.image3D {
-  width: 100%;
-  height: 70%;
-  position: absolute;
-  transform: translateY(30px);
-}
-
 @media #{$mobileSm} {
   ::-webkit-scrollbar-thumb {
     display: none;
