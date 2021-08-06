@@ -31,7 +31,7 @@
         .procedure__timeLine {
           background-color: $primaryTextColor;
           width: 8px;
-          height: 150px;
+          height: 50px;
           margin: 25px 0;
         }
       }
@@ -118,7 +118,7 @@
           margin-left: 25px;
           .procedure__timeLine {
             background-color: $primaryTextColor;
-            height: 50vh;
+            height: 30vh;
             opacity: 0.8;
           }
         }
