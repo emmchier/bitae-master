@@ -212,24 +212,6 @@ ul {
   border-radius: 5px;
 }
 
-.arrow-to-top {
-  height: 45px;
-  width: 45px;
-  position: fixed;
-  z-index: 99;
-  bottom: 0;
-  right: 0;
-  margin: 20px 30px;
-  padding: 10px;
-  color: $primaryTextColor;
-  border-radius: 50%;
-  display: none;
-}
-
-.arrow-to-top:hover {
-  background-color: $translucent;
-}
-
 /* backgrounds */
 
 #index__tipsSection h2,

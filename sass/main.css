@@ -643,10 +643,14 @@ header {
 .navbar .navLink:hover {
   background-color: #3c3d4019;
 }
+.navbar .navLink.changeState {
+  color: #ffffff;
+}
 .navbar.changeState {
   height: 12vh;
   min-height: 12vh;
   box-shadow: 0 0 1rem 0 rgba(0, 0, 0, 0.2);
+  background-color: rgba(0, 0, 0, 0.27);
   -webkit-backdrop-filter: blur(20px);
           backdrop-filter: blur(20px);
   transition: 0.1s ease-in-out;
@@ -655,6 +659,33 @@ header {
   transform: scale(0.7);
   margin-right: 12px;
   transition: 0.1s ease-in-out;
+}
+.navbar.changeState .brand-logo.invert {
+  filter: brightness(0) invert(1);
+}
+.navbar.changeState .brand-logo.invert .navLink {
+  color: #ffffff;
+}
+
+.arrow-to-top {
+  height: 45px;
+  width: 45px;
+  position: fixed;
+  z-index: 99;
+  bottom: 0;
+  right: 0;
+  margin: 20px 30px;
+  padding: 10px;
+  color: #2b2c2c;
+  border-radius: 50%;
+  display: none;
+}
+.arrow-to-top i {
+  color: #ffffff;
+}
+
+.arrow-to-top:hover {
+  background-color: #3c3d4019;
 }
 
 @media (min-width: 992px) {
@@ -1085,24 +1116,6 @@ ul {
 .customCard {
   background-color: #ffffff;
   border-radius: 5px;
-}
-
-.arrow-to-top {
-  height: 45px;
-  width: 45px;
-  position: fixed;
-  z-index: 99;
-  bottom: 0;
-  right: 0;
-  margin: 20px 30px;
-  padding: 10px;
-  color: #2b2c2c;
-  border-radius: 50%;
-  display: none;
-}
-
-.arrow-to-top:hover {
-  background-color: #3c3d4019;
 }
 
 /* backgrounds */

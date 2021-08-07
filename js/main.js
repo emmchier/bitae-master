@@ -10,9 +10,11 @@ $(document).ready(function () {
     if ($(this).scrollTop() > 700) {
       $("#scroll").fadeIn();
       $(".navbar").addClass("changeState");
+      $(".navLink").addClass("changeState");
     } else {
       $("#scroll").fadeOut();
       $(".navbar").removeClass("changeState");
+      $(".navLink").removeClass("changeState");
     }
   });
   // arrow to top

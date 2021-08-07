@@ -28,12 +28,17 @@
     &:hover {
       background-color: $translucent;
     }
+
+    &.changeState {
+      color: $whiteColor;
+    }
   }
 
   &.changeState {
     height: 12vh;
     min-height: 12vh;
     box-shadow: 0 0 1rem 0 rgba(0, 0, 0, 0.2);
+    background-color: rgba(0, 0, 0, 0.27);
     backdrop-filter: blur(20px);
     @include getTransition;
 
@@ -41,8 +46,38 @@
       transform: scale(0.7);
       margin-right: 12px;
       @include getTransition;
+
+      &.invert {
+        filter: brightness(0) invert(1);
+
+        .navLink {
+          color: $whiteColor;
+        }
+      }
     }
   }
+}
+
+.arrow-to-top {
+  height: 45px;
+  width: 45px;
+  position: fixed;
+  z-index: 99;
+  bottom: 0;
+  right: 0;
+  margin: 20px 30px;
+  padding: 10px;
+  color: $primaryTextColor;
+  border-radius: 50%;
+  display: none;
+
+  i {
+    color: $whiteColor;
+  }
+}
+
+.arrow-to-top:hover {
+  background-color: $translucent;
 }
 
 @media #{$note} {
