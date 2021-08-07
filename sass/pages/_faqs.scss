@@ -66,6 +66,11 @@
     .faqsSection__desc {
       border-bottom: 1px solid $whiteColor;
       padding-bottom: 40px;
+
+      a {
+        text-decoration: underline;
+        margin-top: 25px;
+      }
     }
   }
 }

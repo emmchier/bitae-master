@@ -64,11 +64,11 @@ header {
 
 #faqsScreen {
   .sectionHeader {
-    overflow: hidden;
+    overflow: inherit;
     .image3D {
       width: 100%;
-      height: 95%;
-      transform: translateX(-200px) translateY(100px);
+      height: 120%;
+      transform: translateX(-200px) translateY(70px);
       position: absolute;
     }
   }
@@ -157,6 +157,7 @@ header {
 
   #faqsScreen {
     .sectionHeader {
+      overflow: hidden;
       .image3D {
         width: 300%;
         height: 300%;
