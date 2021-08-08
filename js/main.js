@@ -11,10 +11,12 @@ $(document).ready(function () {
       $("#scroll").fadeIn();
       $(".navbar").addClass("changeState");
       $(".navLink").addClass("changeState");
+      $(".burguer-item").addClass("changeState");
     } else {
       $("#scroll").fadeOut();
       $(".navbar").removeClass("changeState");
       $(".navLink").removeClass("changeState");
+      $(".burguer-item").removeClass("changeState");
     }
   });
   // arrow to top

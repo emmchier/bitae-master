@@ -643,16 +643,10 @@ header {
 .navbar .navLink:hover {
   background-color: #3c3d4019;
 }
-.navbar .navLink.changeState {
-  color: #ffffff;
-}
 .navbar.changeState {
   height: 12vh;
   min-height: 12vh;
   box-shadow: 0 0 1rem 0 rgba(0, 0, 0, 0.2);
-  background-color: rgba(0, 0, 0, 0.27);
-  -webkit-backdrop-filter: blur(20px);
-          backdrop-filter: blur(20px);
   transition: 0.1s ease-in-out;
 }
 .navbar.changeState .brand-logo {
@@ -660,11 +654,48 @@ header {
   margin-right: 12px;
   transition: 0.1s ease-in-out;
 }
-.navbar.changeState .brand-logo.invert {
+
+#homeScreen .navbar .navLink.changeState {
+  color: #ffffff;
+}
+#homeScreen .navbar.changeState {
+  background-color: rgba(0, 0, 0, 0.27);
+  -webkit-backdrop-filter: blur(20px);
+          backdrop-filter: blur(20px);
+}
+#homeScreen .navbar.changeState .brand-logo.invert {
   filter: brightness(0) invert(1);
 }
-.navbar.changeState .brand-logo.invert .navLink {
+#homeScreen .navbar.changeState .brand-logo.invert .navLink {
   color: #ffffff;
+}
+
+#procedureScreen .navbar.changeState {
+  background-color: #98eaf6;
+}
+
+#cvsScreen .navbar.changeState {
+  background-color: #ffffff;
+}
+
+#tipsScreen .navbar.changeState {
+  background-color: #9f9e9e;
+}
+
+#faqsScreen .navbar.changeState {
+  background-color: #8092ff;
+}
+
+#termsScreen .navbar.changeState {
+  background-color: rgba(0, 0, 0, 0.27);
+  -webkit-backdrop-filter: blur(20px);
+          backdrop-filter: blur(20px);
+}
+
+#policyScreen .navbar.changeState {
+  background-color: rgba(0, 0, 0, 0.27);
+  -webkit-backdrop-filter: blur(20px);
+          backdrop-filter: blur(20px);
 }
 
 .arrow-to-top {
@@ -710,6 +741,10 @@ header {
     min-height: auto;
     box-shadow: 0 0 1rem 0 rgba(0, 0, 0, 0.2);
   }
+  .navbar .navbar-brand .brand-logo {
+    height: 35px;
+    margin-right: 10px;
+  }
   .navbar.changeState {
     height: auto;
     min-height: auto;
@@ -720,10 +755,6 @@ header {
     transform: none;
     margin-right: 12px;
     transition: 0.1s ease-in-out;
-  }
-  .navbar .navbar-brand .brand-logo {
-    height: 35px;
-    margin-right: 10px;
   }
 
   .navbar-nav {
@@ -786,6 +817,10 @@ header {
   border-radius: 10px;
   background-color: #2b2c2c;
   margin-bottom: 5px;
+}
+
+#homeScreen .burguer-item.changeState {
+  background-color: #ffffff;
 }
 
 #tipsScreen .burguer-item,

@@ -28,30 +28,76 @@
     &:hover {
       background-color: $translucent;
     }
-
-    &.changeState {
-      color: $whiteColor;
-    }
   }
 
   &.changeState {
     height: 12vh;
     min-height: 12vh;
     box-shadow: 0 0 1rem 0 rgba(0, 0, 0, 0.2);
-    background-color: rgba(0, 0, 0, 0.27);
-    backdrop-filter: blur(20px);
     @include getTransition;
 
     .brand-logo {
       transform: scale(0.7);
       margin-right: 12px;
       @include getTransition;
+    }
+  }
+}
 
-      &.invert {
-        filter: brightness(0) invert(1);
-
+@each $section in $section_types {
+  ##{$section} {
+    @if $section == "homeScreen" {
+      .navbar {
         .navLink {
-          color: $whiteColor;
+          &.changeState {
+            color: $whiteColor;
+          }
+        }
+
+        &.changeState {
+          background-color: rgba(0, 0, 0, 0.27);
+          backdrop-filter: blur(20px);
+
+          .brand-logo {
+            &.invert {
+              filter: brightness(0) invert(1);
+
+              .navLink {
+                color: $whiteColor;
+              }
+            }
+          }
+        }
+      }
+    } @else if $section == "cvsScreen" {
+      .navbar {
+        &.changeState {
+          background-color: $whiteColor;
+        }
+      }
+    } @else if $section == "procedureScreen" {
+      .navbar {
+        &.changeState {
+          background-color: $como-lo-hago-light;
+        }
+      }
+    } @else if $section == "tipsScreen" {
+      .navbar {
+        &.changeState {
+          background-color: $tips-light;
+        }
+      }
+    } @else if $section == "faqsScreen" {
+      .navbar {
+        &.changeState {
+          background-color: $preguntas-dark;
+        }
+      }
+    } @else {
+      .navbar {
+        &.changeState {
+          background-color: rgba(0, 0, 0, 0.27);
+          backdrop-filter: blur(20px);
         }
       }
     }
@@ -105,6 +151,13 @@
     min-height: auto;
     box-shadow: 0 0 1rem 0 rgba(0, 0, 0, 0.2);
 
+    .navbar-brand {
+      .brand-logo {
+        height: 35px;
+        margin-right: 10px;
+      }
+    }
+
     &.changeState {
       height: auto;
       min-height: auto;
@@ -114,13 +167,6 @@
         transform: none;
         margin-right: 12px;
         @include getTransition;
-      }
-    }
-
-    .navbar-brand {
-      .brand-logo {
-        height: 35px;
-        margin-right: 10px;
       }
     }
   }

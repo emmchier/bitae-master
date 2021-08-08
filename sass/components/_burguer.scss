@@ -18,6 +18,14 @@
   margin-bottom: 5px;
 }
 
+#homeScreen {
+  .burguer-item {
+    &.changeState {
+      background-color: $whiteColor;
+    }
+  }
+}
+
 #tipsScreen,
 #faqsScreen {
   .burguer-item {
