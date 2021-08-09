@@ -33,7 +33,6 @@ function setForm() {
 
   function eventListeners() {
     setDisabled(true);
-    onEnableState();
     nombre.addEventListener("blur", validarCampo);
     email.addEventListener("blur", validarCampo);
     asunto.addEventListener("blur", validarCampo);
@@ -97,6 +96,7 @@ function setForm() {
         formularioEnviar.classList.remove("ocult");
       }, 5000);
     }, 3000);
+    setDisabled(true);
   }
 
   function validarLongitud(campo) {
@@ -116,16 +116,6 @@ function setForm() {
     }
   }
 
-  function showErrorToast(errorMessage) {
-    var toastErrorHTML =
-      '</span><button class="btn-flat toast-action no-back" onclick="closeToast()"><i class="material-icons white-text close-toast">clear</i></button>';
-    M.toast({
-      html: "<span>" + errorMessage + toastErrorHTML,
-      classes: "red noBorder",
-      displayLength: 8000,
-    });
-  }
-
   function showError(isShowing, type) {
     var typeError = document.querySelector(type);
     if (isShowing) {
@@ -133,15 +123,5 @@ function setForm() {
     } else {
       $(typeError).removeClass("errorShow");
     }
-  }
-
-  function onEnableState() {
-    btnEnviar.addEventListener("click", () => {
-      setTimeout(function () {
-        const dontClick = `<p>Debes llenar los campos anteriores</p>`;
-        const dontClickMessage = document.querySelector(".help-submit");
-        dontClickMessage.innerHTML = dontClick;
-      }, 4000);
-    });
   }
 }

@@ -1,7 +1,9 @@
 .bottom-sheet-contact {
-  height: 80vh;
-  max-height: 80vh;
+  height: 100vh;
+  max-height: 100vh;
   background-color: $tagColor;
+  position: fixed;
+  z-index: 9999999999;
 
   .offcanvas-header {
     display: flex;
@@ -19,7 +21,7 @@
   }
 
   .offcanvas-body {
-    overflow: scroll;
+    overflow: hidden;
     figure {
       display: flex;
       align-items: center;
