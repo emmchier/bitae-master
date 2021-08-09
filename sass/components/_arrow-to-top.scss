@@ -1,0 +1,10 @@
+.arrow-to-top {
+  display: none;
+  position: fixed;
+  right: 0;
+  margin-right: 30px;
+
+  i {
+    color: $primaryTextColor;
+  }
+}

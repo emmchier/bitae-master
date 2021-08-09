@@ -630,6 +630,7 @@ header {
 }
 .navbar .navbar-brand h3 {
   margin: 0;
+  font-size: 1.8rem;
 }
 .navbar .navLink {
   padding: 10px 20px;
@@ -669,6 +670,9 @@ header {
 #homeScreen .navbar.changeState .brand-logo.invert .navLink {
   color: #ffffff;
 }
+#homeScreen .navbar.changeState .arrow-to-top i {
+  color: #ffffff;
+}
 
 #procedureScreen .navbar.changeState {
   background-color: #98eaf6;
@@ -687,36 +691,11 @@ header {
 }
 
 #termsScreen .navbar.changeState {
-  background-color: rgba(0, 0, 0, 0.27);
-  -webkit-backdrop-filter: blur(20px);
-          backdrop-filter: blur(20px);
+  background-color: #ffffff;
 }
 
 #policyScreen .navbar.changeState {
-  background-color: rgba(0, 0, 0, 0.27);
-  -webkit-backdrop-filter: blur(20px);
-          backdrop-filter: blur(20px);
-}
-
-.arrow-to-top {
-  height: 45px;
-  width: 45px;
-  position: fixed;
-  z-index: 99;
-  bottom: 0;
-  right: 0;
-  margin: 20px 30px;
-  padding: 10px;
-  color: #2b2c2c;
-  border-radius: 50%;
-  display: none;
-}
-.arrow-to-top i {
-  color: #ffffff;
-}
-
-.arrow-to-top:hover {
-  background-color: #3c3d4019;
+  background-color: #ffffff;
 }
 
 @media (min-width: 992px) {
@@ -744,6 +723,9 @@ header {
   .navbar .navbar-brand .brand-logo {
     height: 35px;
     margin-right: 10px;
+  }
+  .navbar .navbar-brand h3 {
+    display: none;
   }
   .navbar.changeState {
     height: auto;
@@ -821,6 +803,11 @@ header {
 
 #homeScreen .burguer-item.changeState {
   background-color: #ffffff;
+}
+
+#cvsScreen .burguer-item,
+#procedureScreen .burguer-item {
+  background-color: #000000;
 }
 
 #tipsScreen .burguer-item,
@@ -911,6 +898,58 @@ header {
   position: relative;
   transform: translateY(100px);
   opacity: 0.3;
+}
+
+.tipsModal {
+  position: fixed;
+  z-index: 9999999999;
+}
+.tipsModal .modal-content {
+  background-color: #9f9e9e;
+  border: none;
+}
+.tipsModal .modal-content .modal-header h5 {
+  color: #ffffff;
+}
+.tipsModal .modal-content .modal-body {
+  padding-bottom: 10vh;
+}
+.tipsModal .modal-content .modal-body h3 {
+  margin-top: 30px;
+  margin-bottom: 15px;
+}
+.tipsModal .modal-content .modal-body p {
+  font-size: 1.3rem !important;
+  font-weight: 300;
+  margin-top: 20px;
+}
+.tipsModal .modal-content .modal-header,
+.tipsModal .modal-content .modal-footer {
+  border: none;
+}
+.tipsModal .modal-content .modal-footer .customBtn {
+  border: 1px solid #ffffff;
+  color: #ffffff;
+}
+.tipsModal .modal-content .modal-footer .customBtn:hover {
+  border: 1px solid #000000;
+}
+
+@media (max-width: 600px) {
+  #tipsScreen .tips__tipCard .card-header,
+#tipsScreen .tips__tipCard .card-body,
+#tipsScreen .tips__tipCard .card-footer {
+    padding: 0 !important;
+  }
+}
+.arrow-to-top {
+  display: none;
+  position: fixed;
+  right: 0;
+  margin-right: 30px;
+}
+.arrow-to-top i {
+  color: #2b2c2c;
 }
 
 #procedureScreen .procedure__tipsSectionContent, #procedureScreen #procedureSection .procedure__timeLineContainer .procedure__stepNumber--card {
@@ -1209,6 +1248,10 @@ button:focus,
   overflow-y: inherit;
 }
 
+.sectionTitle {
+  display: none;
+}
+
 @media (min-width: 576px) {
   ::-webkit-scrollbar-thumb {
     display: none;
@@ -1226,6 +1269,10 @@ button:focus,
 
   .goDown {
     display: inline;
+  }
+
+  .sectionTitle {
+    display: block;
   }
 }
 #errorScreen .customBtn {
@@ -1593,7 +1640,7 @@ button:focus,
 }
 #tipsScreen #tipsSection h3 {
   font-weight: 600;
-  font-size: 3rem;
+  font-size: 2rem;
 }
 #tipsScreen #tipsSection h4 {
   font-size: 1.5rem;
@@ -1609,25 +1656,46 @@ button:focus,
   font-size: 2rem;
 }
 #tipsScreen .articleDesc {
-  font-size: 1.5rem;
+  font-size: 1.4rem;
   font-weight: 400;
+  margin-top: 20px;
 }
 #tipsScreen .tips__tipCard {
   min-height: 50vh;
   display: flex;
   align-items: center;
   justify-content: flex-start;
-  padding: 30px;
   border-radius: 20px;
   background-color: #9f9e9e;
   border: none;
 }
-#tipsScreen .tips__tipCard .card-img-top {
+#tipsScreen .tips__tipCard .alignMiddleY {
+  height: 50vh;
+  min-height: 50vh;
+}
+#tipsScreen .tips__tipCard .card-header {
+  padding: 30px 30px 0;
+}
+#tipsScreen .tips__tipCard .card-body {
+  padding: 0 30px 30px;
+}
+#tipsScreen .tips__tipCard .card-header,
+#tipsScreen .tips__tipCard .card-footer {
   width: 100%;
-  margin-bottom: 30px;
+  border: none;
+  background-color: transparent;
+}
+#tipsScreen .tips__tipCard .card-footer {
+  display: flex;
+  align-items: flex-end;
+  justify-content: flex-end;
+  padding: 10px 0;
+}
+#tipsScreen .tips__tipCard .card-footer .customBtn {
+  color: #ffffff;
 }
 #tipsScreen .tips__tipCard .tips__cvImage {
-  padding-right: 30px;
+  padding-left: 30px;
 }
 #tipsScreen .tips__tipCard figure,
 #tipsScreen .tips__tipCard img {
@@ -1638,24 +1706,34 @@ button:focus,
   height: auto;
   padding: 15vh 0;
 }
+#tipsScreen #tips__mediumSection p {
+  font-size: 1.5rem;
+  font-weight: 300;
+  margin-bottom: 10vh;
+}
 #tipsScreen #tips__mediumSection .tips__mediumSection--article {
   background-color: transparent;
   border: none;
   box-shadow: none;
+  transition: 0.2s ease-in-out;
+}
+#tipsScreen #tips__mediumSection .tips__mediumSection--article:hover .tips__mediumSection--imgContainer .tips__mediumSection--img {
+  filter: grayscale(0%);
+  cursor: pointer;
+  transition: 0.2s ease-in-out;
 }
 #tipsScreen #tips__mediumSection .tips__mediumSection--article .tips__mediumSection--imgContainer {
   overflow: hidden;
   max-height: 30vh;
+}
+#tipsScreen #tips__mediumSection .tips__mediumSection--article .tips__mediumSection--imgContainer .tips__mediumSection--img {
+  filter: grayscale(100%);
 }
 #tipsScreen #tips__mediumSection .tips__mediumSection--article .card-body {
   padding: 0;
 }
 #tipsScreen #tips__mediumSection .tips__mediumSection--article .card-body .articleTitle {
   margin: 20px 0;
-}
-#tipsScreen #tips__mediumSection .tips__mediumSection--article .card-body .articleDesc {
-  margin-bottom: 30px;
-  font-weight: 300;
 }
 #tipsScreen #tips__mediumSection .tips__mediumSection--article .btn-medium {
   display: block;
@@ -1672,6 +1750,18 @@ button:focus,
 #tipsScreen .col-md-4,
 #tipsScreen .col-md-12 {
   padding: 0;
+}
+
+.btnOpenModal {
+  width: 100%;
+  position: absolute;
+  bottom: 0;
+  display: flex;
+  align-items: flex-end;
+  justify-content: flex-end;
+}
+.btnOpenModal .customBtn {
+  color: #ffffff;
 }
 
 @media (max-width: 600px) {

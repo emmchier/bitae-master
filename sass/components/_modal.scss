@@ -1,0 +1,66 @@
+.tipsModal {
+  position: fixed;
+  z-index: 9999999999;
+
+  .modal-content {
+    background-color: $tips-light;
+    border: none;
+
+    .modal-header {
+      h5 {
+        color: $whiteColor;
+      }
+    }
+
+    .modal-body {
+      padding-bottom: 10vh;
+      h3 {
+        margin-top: 30px;
+        margin-bottom: 15px;
+      }
+
+      p {
+        font-size: 1.3rem !important;
+        font-weight: 300;
+        margin-top: 20px;
+      }
+    }
+
+    .modal-header,
+    .modal-footer {
+      border: none;
+    }
+
+    .modal-footer {
+      .customBtn {
+        border: 1px solid $whiteColor;
+        color: $whiteColor;
+
+        &:hover {
+          border: 1px solid $blackColor;
+        }
+      }
+    }
+  }
+}
+
+@media #{$note} {
+}
+
+@media #{$tablet} {
+}
+
+@media #{$mobileSm} {
+}
+
+@media #{$mobile} {
+  #tipsScreen {
+    .tips__tipCard {
+      .card-header,
+      .card-body,
+      .card-footer {
+        padding: 0 !important;
+      }
+    }
+  }
+}

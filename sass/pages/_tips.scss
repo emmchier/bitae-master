@@ -6,7 +6,7 @@
 
     h3 {
       font-weight: 600;
-      font-size: 3rem;
+      font-size: 2rem;
     }
 
     h4 {
@@ -27,8 +27,9 @@
   }
 
   .articleDesc {
-    font-size: $base_primary_text;
+    font-size: 1.4rem;
     font-weight: $base_text_weight;
+    margin-top: 20px;
   }
 
   .tips__tipCard {
@@ -36,18 +37,43 @@
     display: flex;
     align-items: center;
     justify-content: flex-start;
-    padding: 30px;
     border-radius: 20px;
     background-color: $tips-light;
     border: none;
 
-    .card-img-top {
+    .alignMiddleY {
+      height: 50vh;
+      min-height: 50vh;
+    }
+
+    .card-header {
+      padding: 30px 30px 0;
+    }
+
+    .card-body {
+      padding: 0 30px 30px;
+    }
+
+    .card-header,
+    .card-footer {
       width: 100%;
-      margin-bottom: 30px;
+      border: none;
+      background-color: transparent;
+    }
+
+    .card-footer {
+      display: flex;
+      align-items: flex-end;
+      justify-content: flex-end;
+      padding: 10px 0;
+
+      .customBtn {
+        color: $whiteColor;
+      }
     }
 
     .tips__cvImage {
-      padding-right: 30px;
+      padding-left: 30px;
     }
   }
 
@@ -61,14 +87,35 @@
     height: auto;
     padding: 15vh 0;
 
+    p {
+      font-size: 1.5rem;
+      font-weight: 300;
+      margin-bottom: 10vh;
+    }
+
     .tips__mediumSection--article {
       background-color: transparent;
       border: none;
       box-shadow: none;
+      transition: 0.2s ease-in-out;
+
+      &:hover {
+        .tips__mediumSection--imgContainer {
+          .tips__mediumSection--img {
+            filter: grayscale(0%);
+            cursor: pointer;
+            transition: 0.2s ease-in-out;
+          }
+        }
+      }
 
       .tips__mediumSection--imgContainer {
         overflow: hidden;
         max-height: 30vh;
+
+        .tips__mediumSection--img {
+          filter: grayscale(100%);
+        }
       }
 
       .card-body {
@@ -76,11 +123,6 @@
 
         .articleTitle {
           margin: 20px 0;
-        }
-
-        .articleDesc {
-          margin-bottom: 30px;
-          font-weight: 300;
         }
       }
 
@@ -104,6 +146,19 @@
   .col-md-4,
   .col-md-12 {
     padding: 0;
+  }
+}
+
+.btnOpenModal {
+  width: 100%;
+  position: absolute;
+  bottom: 0;
+  display: flex;
+  align-items: flex-end;
+  justify-content: flex-end;
+
+  .customBtn {
+    color: $whiteColor;
   }
 }
 

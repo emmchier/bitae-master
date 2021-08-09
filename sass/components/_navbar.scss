@@ -13,6 +13,7 @@
 
     h3 {
       margin: 0;
+      font-size: 1.8rem;
     }
   }
 
@@ -67,6 +68,12 @@
               }
             }
           }
+
+          .arrow-to-top {
+            i {
+              color: $whiteColor;
+            }
+          }
         }
       }
     } @else if $section == "cvsScreen" {
@@ -96,34 +103,11 @@
     } @else {
       .navbar {
         &.changeState {
-          background-color: rgba(0, 0, 0, 0.27);
-          backdrop-filter: blur(20px);
+          background-color: $whiteColor;
         }
       }
     }
   }
-}
-
-.arrow-to-top {
-  height: 45px;
-  width: 45px;
-  position: fixed;
-  z-index: 99;
-  bottom: 0;
-  right: 0;
-  margin: 20px 30px;
-  padding: 10px;
-  color: $primaryTextColor;
-  border-radius: 50%;
-  display: none;
-
-  i {
-    color: $whiteColor;
-  }
-}
-
-.arrow-to-top:hover {
-  background-color: $translucent;
 }
 
 @media #{$note} {
@@ -155,6 +139,10 @@
       .brand-logo {
         height: 35px;
         margin-right: 10px;
+      }
+
+      h3 {
+        display: none;
       }
     }
 

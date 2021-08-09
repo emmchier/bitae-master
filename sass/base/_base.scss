@@ -269,6 +269,10 @@ button:focus,
   overflow-y: inherit;
 }
 
+// .sectionMainTitle {
+//   display: none;
+// }
+
 @media #{$mobileSm} {
   ::-webkit-scrollbar-thumb {
     display: none;
@@ -286,4 +290,8 @@ button:focus,
   .goDown {
     display: inline;
   }
+
+  // .sectionMainTitle {
+  //   display: block;
+  // }
 }

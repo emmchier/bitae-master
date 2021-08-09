@@ -26,6 +26,13 @@
   }
 }
 
+#cvsScreen,
+#procedureScreen {
+  .burguer-item {
+    background-color: $blackColor;
+  }
+}
+
 #tipsScreen,
 #faqsScreen {
   .burguer-item {
