@@ -3,19 +3,23 @@
   max-height: 80vh;
   background-color: $tagColor;
 
-  .btn-close-contact {
-    i {
-      padding: 12px;
-      border-radius: 30px;
-      background-color: $secondaryColor;
-      color: $whiteColor;
-      right: 10px;
-      position: absolute;
+  .offcanvas-header {
+    display: flex;
+    align-items: flex-end;
+    justify-content: flex-end;
+    .btn-close-contact {
+      i {
+        padding: 8px;
+        border-radius: 30px;
+        background-color: $secondaryColor;
+        color: $whiteColor;
+        font-size: 15px;
+      }
     }
   }
 
   .offcanvas-body {
-    overflow: hidden;
+    overflow: scroll;
     figure {
       display: flex;
       align-items: center;
@@ -27,6 +31,25 @@
       position: relative;
       transform: translateY(100px);
       opacity: 0.3;
+    }
+  }
+}
+
+@media #{$note} {
+}
+
+@media #{$tablet} {
+}
+
+@media #{$mobileSm} {
+}
+
+@media #{$mobile} {
+  .bottom-sheet-contact {
+    .offcanvas-body {
+      .image3D {
+        display: none;
+      }
     }
   }
 }
