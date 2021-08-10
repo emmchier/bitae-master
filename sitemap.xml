@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset
+      xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+      xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+      xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9
+            http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd">
+<!-- created with Free Online Sitemap Generator www.xml-sitemaps.com -->
+
+
+<url>
+  <loc>https://bitae-master-bitae.vercel.app/</loc>
+  <lastmod>2021-08-10T00:35:51+00:00</lastmod>
+  <priority>1.00</priority>
+</url>
+<url>
+  <loc>https://bitae-master-bitae.vercel.app/index.html</loc>
+  <lastmod>2021-08-10T00:35:51+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://bitae-master-bitae.vercel.app/elegi-tu-cv.html</loc>
+  <lastmod>2021-08-10T00:35:51+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://bitae-master-bitae.vercel.app/como-hago.html</loc>
+  <lastmod>2021-08-10T00:35:51+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://bitae-master-bitae.vercel.app/tips.html</loc>
+  <lastmod>2021-08-10T00:35:51+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://bitae-master-bitae.vercel.app/preguntas-frecuentes.html</loc>
+  <lastmod>2021-08-10T00:35:51+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://bitae-master-bitae.vercel.app/terminos-y-condiciones.html</loc>
+  <lastmod>2021-08-10T00:35:51+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://bitae-master-bitae.vercel.app/politicas-de-privacidad.html</loc>
+  <lastmod>2021-08-10T00:35:51+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+
+
+</urlset>
