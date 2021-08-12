@@ -4,9 +4,7 @@
 
 ## Objetivo
 
-### Bitae es un sitio web de creado integramente por HTML5, SASS y JavaScript. Incluye el uso de algunas librerías de terceros pero no está desarrollada con ningún framework como React, Vue, Angular ni similares./
-
-### /
+### Bitae es un sitio web de creado integramente por HTML5, SASS y JavaScript. Incluye el uso de algunas librerías de terceros pero no está desarrollada con ningún framework como React, Vue, Angular ni similares.
 
 ### Es el resultado como TP final de la Carrera Frontend en Coderhouse en el marco del primer módulo de Desarrollo Web. El uso de JavaScript fue agregado para darle mayor funcionalidad y dinamismo./
 
