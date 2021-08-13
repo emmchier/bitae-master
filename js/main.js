@@ -37,3 +37,6 @@ sidenav.addEventListener("hide.bs.offcanvas", function () {
   burguer2.classList.remove("animate");
   burguer3.classList.remove("animate");
 });
+
+// AOS Animation
+AOS.init();

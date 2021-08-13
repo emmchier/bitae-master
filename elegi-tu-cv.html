@@ -43,6 +43,9 @@
   <!-- Material Icons -->
   <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet" />
 
+  <!-- AOS ANimation -->
+  <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+
   <!-- Bootstrap -->
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet"
     integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous" />
@@ -115,17 +118,19 @@
         <div class="row">
           <div class="col-sm-12 col-lg-6 contentInfo">
             <div class="headerContent alignMiddleY">
-              <h3>Diseños de cv <div class="goDown">pensados para vos</div>
+              <h3 data-aos="fade-right" data-aos-duration="1000">Diseños de cv <div class="goDown" data-aos="fade-right"
+                  data-aos-duration="1200">pensados para vos
+                </div>
               </h3>
               <ul class="hashtagsList">
-                <li class="tag">#cv</li>
-                <li class="tag">#resume</li>
-                <li class="tag">#curriculumvitae</li>
+                <li class="tag" data-aos="fade-right" data-aos-duration="1600">#cv</li>
+                <li class="tag" data-aos="fade-right" data-aos-duration="1800">#resume</li>
+                <li class="tag" data-aos="fade-right" data-aos-duration="2000">#curriculumvitae</li>
               </ul>
             </div>
           </div>
           <div class="col-sm-12 col-lg-6 contentHero">
-            <figure class="alignMiddleY">
+            <figure class="alignMiddleY" data-aos="fade-right" data-aos-duration="1600">
               <img src="imgs/header-cvs.svg" class="image3D" alt="imágen 3D">
             </figure>
           </div>
@@ -135,23 +140,24 @@
 
     <section id="cvsSection">
       <div class="container">
-        <h3 class="sectionMainTitle">Elegí tu CV</h3>
-        <h4>
+        <h3 class="sectionMainTitle" data-aos="fade-up" data-aos-duration="1000">Elegí tu CV</h3>
+        <h4 data-aos="fade-up" data-aos-duration="1200">
           Nuestro objetivo se resume a lo siguiente: Encontrá el diseño de CV que más se
           ajusta a tu perfil profesional, llená los campos con tus datos, descargalo y
           compartilo en tus redes. Para esto, contamos con diseños modernos acordes a las
           tendencias actuales que ayudarán a tener un mayor impacto visual en quien lo mire.
         </h4>
 
-        <article class="cvs__article cvs__article--standard card elevation5">
+        <article class="cvs__article cvs__article--standard card elevation5" data-aos="fade-up"
+          data-aos-duration="1800">
           <div class="row">
             <div class="col-md-6 alignMiddleY article__img">
               <img src="imgs/cvs/cv1.png" class="rounded-start imgCv elevation1" alt="imagen de un diseño de cv" />
             </div>
             <div class="col-md-6">
               <div class="card-body article__info alignMiddleY">
-                <h3 class="card-title">CV Standard</h3>
-                <h4 class="card-text">
+                <h3 class="card-title" data-aos="fade-up" data-aos-duration="2000">CV Standard</h3>
+                <h4 class="card-text" data-aos="fade-up" data-aos-duration="2500">
                   Un diseño base, que se ajusta a cualquier área profesional. Con espacios entre los campos
                   que ayudarán a una mejor lectura y la información visual justa sin perder la tendencia.
                 </h4>
@@ -163,16 +169,20 @@
           </div>
         </article>
 
-        <article class="card cvs__article cvs__article--it elevation5">
+        <article class="card cvs__article cvs__article--it elevation5" data-aos="fade-up" data-aos-duration="1800">
           <div class="row">
             <div class="col-md-6 article__info-container">
               <div class="card-body article__info alignMiddleY">
-                <h3 class="card-title">CV IT</h3>
-                <h4 class="card-text">
+                <h3 class="card-title" data-aos="fade-up" data-aos-duration="2000">CV IT</h3>
+                <h4 class="card-text" data-aos="fade-up" data-aos-duration="2500">
                   Porque conocemos el auge de la industria IT, creamos un diseño a medida
                   que se ajusta a los requerimientos actuales, con colores e iconografía
                   necesaria cubrir el rango de tecnologías en las que trabajás.
                 </h4>
+
+                <!-- Los botones en estas cards los inhabilité porque llevarían los links
+                     a la app para crear CVS que aun no está comenzada -->
+
                 <!-- <a href="#!" class="btn-ver-mas mb-4 customBtn customBtn__outlined">
                   Editar
                 </a> -->
@@ -184,15 +194,15 @@
           </div>
         </article>
 
-        <article class="cvs__article cvs__article--adm card elevation5">
+        <article class="cvs__article cvs__article--adm card elevation5" data-aos="fade-up" data-aos-duration="1800">
           <div class="row">
             <div class="col-md-6 alignMiddleY article__img">
               <img src="imgs/cvs/cv3.png" class="rounded-start imgCv elevation1" alt="imagen de un diseño de cv" />
             </div>
             <div class="col-md-6">
               <div class="card-body article__info alignMiddleY">
-                <h3 class="card-title">CV Administrativo</h3>
-                <h4 class="card-text">
+                <h3 class="card-title" data-aos="fade-up" data-aos-duration="2000">CV Administrativo</h3>
+                <h4 class="card-text" data-aos="fade-up" data-aos-duration="2500">
                   Para el área de administración y rubros similares, tenemos éste diseño
                   pensado para reunir la mejor información, clara y consiza.
                 </h4>

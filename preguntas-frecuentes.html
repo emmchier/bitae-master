@@ -41,6 +41,9 @@
   <!-- Material Icons -->
   <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet" />
 
+  <!-- AOS ANimation -->
+  <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+
   <!-- Bootstrap -->
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet"
     integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous" />
@@ -113,18 +116,19 @@
         <div class="row">
           <div class="col-sm-12 col-lg-6 contentInfo">
             <div class="headerContent alignMiddleY">
-              <h3>Liberá tus dudas aquí</h3>
+              <h3 data-aos="fade-right" data-aos-duration="1000">Liberá tus dudas aquí</h3>
               <ul class="hashtagsList">
-                <li class="tag">#preguntas</li>
-                <li class="tag">#dudas</li>
-                <li class="tag">#quees</li>
-                <li class="tag">#comohago</li>
+                <li class="tag" data-aos="fade-right" data-aos-duration="1200">#preguntas</li>
+                <li class="tag" data-aos="fade-right" data-aos-duration="1400">#dudas</li>
+                <li class="tag" data-aos="fade-right" data-aos-duration="1600">#quees</li>
+                <li class="tag" data-aos="fade-right" data-aos-duration="2000">#comohago</li>
               </ul>
             </div>
           </div>
           <div class="col-sm-12 col-lg-6 contentHero">
             <figure class="alignMiddleY">
-              <img src="imgs/index-faqs.svg" class="image3D" alt="imágen 3D">
+              <img src="imgs/index-faqs.svg" class="image3D" alt="imágen 3D" data-aos="fade-in-right"
+                data-aos-duration="2000">
             </figure>
           </div>
         </div>
@@ -133,14 +137,14 @@
 
     <section id="faqsSection">
       <div class="container">
-        <h3 class="sectionMainTitle">Preguntas Frecuentes</h3>
-        <h4>
+        <h3 class="sectionMainTitle" data-aos="fade-up" data-aos-duration="1000">Preguntas Frecuentes</h3>
+        <h4 data-aos="fade-up" data-aos-duration="1500">
           Ante cualquier consulta, te invitamos primero a revisar nuestras preguntas frecuentes.
           Si no encontraras la respuesta a tu pregunta, escribínos que con gusto te respondemos.
         </h4>
         <ul class="accordion accordion-flush" id="accordionExample">
 
-          <li class="accordion-item">
+          <li class="accordion-item" data-aos="fade-up" data-aos-duration="1000">
             <div class="faqsSection__titleContainer">
               <h4 class="accordion-header" id="heading1">
                 <div class="faqsSection__titleCircle elevation3"></div>
@@ -161,7 +165,7 @@
             </div>
           </li>
 
-          <li class="accordion-item">
+          <li class="accordion-item" data-aos="fade-up" data-aos-duration="1000">
             <div class="faqsSection__titleContainer">
               <h4 class="accordion-header" id="heading2">
                 <div class="faqsSection__titleCircle elevation3"></div>
@@ -182,7 +186,7 @@
             </div>
           </li>
 
-          <li class="accordion-item">
+          <li class="accordion-item" data-aos="fade-up" data-aos-duration="1000">
             <div class="faqsSection__titleContainer">
               <h4 class="accordion-header" id="heading3">
                 <div class="faqsSection__titleCircle elevation3"></div>
@@ -204,7 +208,7 @@
             </div>
           </li>
 
-          <li class="accordion-item">
+          <li class="accordion-item" data-aos="fade-up" data-aos-duration="1000">
             <div class="faqsSection__titleContainer">
               <h4 class="accordion-header" id="heading4">
                 <div class="faqsSection__titleCircle elevation3"></div>
@@ -235,7 +239,7 @@
             </div>
           </li>
 
-          <li class="accordion-item">
+          <li class="accordion-item" data-aos="fade-up" data-aos-duration="1000">
             <div class="faqsSection__titleContainer">
               <h4 class="accordion-header" id="heading5">
                 <div class="faqsSection__titleCircle elevation3"></div>
@@ -259,7 +263,7 @@
             </div>
           </li>
 
-          <li class="accordion-item">
+          <li class="accordion-item" data-aos="fade-up" data-aos-duration="1000">
             <div class="faqsSection__titleContainer">
               <h4 class="accordion-header" id="heading6">
                 <div class="faqsSection__titleCircle elevation3"></div>
@@ -470,6 +474,9 @@
 
   <!-- Bootstrap Validator -->
   <script src="js/libraries/bootstrap/validator.min.js"></script>
+
+  <!-- aos animation -->
+  <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
 
   <script src="js/main.js"></script>
   <script src="js/form.js"></script>

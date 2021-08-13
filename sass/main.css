@@ -1352,6 +1352,13 @@ button:focus,
   display: inline;
   margin-left: 50px;
 }
+#procedureScreen #procedureSection .procedure__stepDescription {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  transform: translateY(-30px);
+}
 #procedureScreen .procedure__tipsSectionContent {
   padding: 30px;
   margin: 10vh 0;
@@ -1396,20 +1403,30 @@ button:focus,
   }
   #procedureScreen #procedureSection .procedure__timeLineContainer .procedure__lineContainer .procedure__timeLine {
     background-color: #2b2c2c;
-    height: 30vh;
+    height: 35vh;
     opacity: 0.8;
   }
   #procedureScreen #procedureSection .procedure__stepDescription {
-    padding: 0;
+    padding: 0 20px;
+    flex-direction: column;
+    transform: translateY(0);
   }
   #procedureScreen #procedureSection .procedure__stepDescription p {
     font-size: 1.5rem;
   }
   #procedureScreen #procedureSection .procedure__iconContainer .icon {
+    height: 100%;
     margin: 30px;
   }
   #procedureScreen .procedure__tipsSectionContent {
     padding: 20px;
+  }
+  #procedureScreen .procedure__tipsSectionContent .card-title {
+    font-size: 30px !important;
+  }
+  #procedureScreen .procedure__tipsSectionContent .btn-ver-mas {
+    position: relative;
+    z-index: 9999;
   }
 }
 #faqsSection {
@@ -1832,6 +1849,7 @@ button:focus,
 }
 #cvsScreen .cvs__article--standard .imgCv {
   width: 55%;
+  background-color: #ffffff;
 }
 #cvsScreen .cvs__article--it .imgCv {
   width: 65%;

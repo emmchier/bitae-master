@@ -55,6 +55,14 @@
         margin-left: 50px;
       }
     }
+
+    .procedure__stepDescription {
+      width: 100%;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      transform: translateY(-30px);
+    }
   }
 
   .procedure__tipsSectionContent {
@@ -116,16 +124,19 @@
           align-items: flex-start;
           justify-content: flex-start;
           margin-left: 25px;
+
           .procedure__timeLine {
             background-color: $primaryTextColor;
-            height: 30vh;
+            height: 35vh;
             opacity: 0.8;
           }
         }
       }
 
       .procedure__stepDescription {
-        padding: 0;
+        padding: 0 20px;
+        flex-direction: column;
+        transform: translateY(0);
         p {
           font-size: 1.5rem;
         }
@@ -133,12 +144,22 @@
 
       .procedure__iconContainer {
         .icon {
+          height: 100%;
           margin: 30px;
         }
       }
     }
     .procedure__tipsSectionContent {
       padding: 20px;
+
+      .card-title {
+        font-size: 30px !important;
+      }
+
+      .btn-ver-mas {
+        position: relative;
+        z-index: 9999;
+      }
     }
   }
 }
